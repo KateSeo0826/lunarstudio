@@ -1,0 +1,221 @@
+{
+  "home": {
+    "contactLink": "Contact Us for your business",
+    "header": "Welcome Lunar Studio",
+    "learnLink": "Learn About Us",
+    "subheader": "This is a multilingual LunarStudio Website using next-intl."
+  },
+  "navbar": {
+    "home": "Home",
+    "about": "About",
+    "contact": "contact",
+    "projects": "Projects",
+    "services": "Services",
+    "blog": "Blog"
+  },
+  "about": {
+    "subTag": "브랜드 전략과 웹 제작을 함께하는 파트너",
+    "sloganLine1": "루나르 스튜디오는",
+    "sloganPoint1": "전략적인 기획과 탄탄한 실행력",
+    "sloganConnector": "을 바탕으로",
+    "sloganPoint2": "브랜드의 방향을 설계하고",
+    "sloganLine2Part1": "웹사이트로 완성하는",
+    "sloganLine2Part2": "크리에이티브 스튜디오입니다",
+    "descTitle": "영상 중심의 콘텐츠 마케팅 에이전시",
+    "descLine1": "단순히 멋진 영상을 만드는 것을 넘어,",
+    "descLine2": "브랜드의 메시지를 명확하게 전달하고",
+    "descHighlight1": "성과로 이어지는 콘텐츠를 완성하는 것",
+    "descLine3": "한화생명, 아모레퍼시픽, 롯데시네마 등",
+    "descLine4": "굴지의 대기업과 함께하며 쌓아온 경험을 바탕으로",
+    "descHighlight2": "효율적인 마케팅 메시지",
+    "descHighlight3": "강렬한 셀링포인트",
+    "descFinal": "99%의 치밀한 전략에 1%의 감각을 더해, 브랜드가 기억되고 사랑받는 결과물을 만들어내겠습니다."
+  },
+  "intro": {
+    "subtitle": "Driven by Design",
+    "titleMain": "We design digital experiences that empower brands",
+    "titleSecondary": "to stand out and engage their audiences.",
+    "description": "By combining strategy, design, and technology, we transform ideas into meaningful digital experiences. Our work blends imagination with precision to create bold outcomes that drive growth.",
+    "ourStory": "OUR STORY",
+    "contactUs": "CONTACT US"
+  },
+  "ourServices": {
+    "subtitle": "Our Capabilities",
+    "titlePart1": "Creative",
+    "titlePart2": "Solutions",
+    "services": {
+      "branding": {
+        "title": "Branding",
+        "image": "https://cdn.prod.website-files.com/692e410b4406ea2cf410f589/6986fbf4ece7ff793d251422_pic3.webp",
+        "tags": [
+          "Brand Identity",
+          "Naming",
+          "Guidelines",
+          "Creative Direction",
+          "Brand Positioning"
+        ]
+      },
+      "design": {
+        "title": "Design",
+        "image": "https://cdn.prod.website-files.com/692e410b4406ea2cf410f589/6986fbf4fdd0e2c6bcb40546_pic2.webp",
+        "tags": [
+          "UI/UX",
+          "Web Design",
+          "Product Design",
+          "Design Systems",
+          "Wireframing",
+          "Prototyping"
+        ]
+      },
+      "development": {
+        "title": "Development",
+        "image": "https://cdn.prod.website-files.com/692e410b4406ea2cf410f589/6986fbf48bef78c279177f0c_pic1.webp",
+        "tags": [
+          "Web Development",
+          "Webflow",
+          "FSE Themes",
+          "Performance",
+          "Accessibility"
+        ]
+      },
+      "content": {
+        "title": "Content",
+        "image": "https://cdn.prod.website-files.com/692e410b4406ea2cf410f589/6986fbf4774ed7ceb77c06f2_pic4.webp",
+        "tags": [
+          "Copywriting",
+          "Storytelling",
+          "Content Strategy",
+          "Motion Design",
+          "Video Editing"
+        ]
+      },
+      "marketing": {
+        "title": "Marketing",
+        "image": "https://cdn.prod.website-files.com/692e410b4406ea2cf410f589/6986fc59d2fc284c294488a5_pic5.webp",
+        "tags": [
+          "Digital Strategy",
+          "SEO",
+          "Analytics",
+          "Social Media",
+          "Campaign Design",
+          "Landing Pages"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "ourPortfolio": "Our Portfolio",
+    "titlePart1": "Selected",
+    "titlePart2": "Work",
+    "currentYear": "©2026",
+    "items": {
+      "niji": {
+        "name": "Niji",
+        "category": "Design",
+        "description": "Niji is a website project created for a Japanese sushi restaurant. The design and user experience were carefully refined to provide a unique online experience.",
+        "client": "Niji Sushi",
+        "services": ["Web Design", "Frontend Development", "Brand Strategy"],
+        "url": "https://nijisushirestaurant.com/",
+        "details": {
+          "problem": "The original site was hosted on PythonAnywhere with outdated technologies and unnecessary database dependencies, making updates and maintenance cumbersome.",
+          "approach": [
+            "Migrated the website to WordPress for a more flexible platform",
+            "Simplified backend structure by removing redundant systems",
+            "Modernized the outdated interface",
+            "Improved accessibility and ease of navigation"
+          ],
+          "solution": "The redesigned website is now clean, accessible, and easy to maintain, with a modern interface that enhances user experience and streamlines content management."
+        }
+      },
+      "mobile": {
+        "name": "Mobile",
+        "category": "Identity"
+      },
+      "reality": {
+        "name": "Reality",
+        "category": "Strategy"
+      },
+      "ecology": {
+        "name": "Ecology",
+        "category": "Rebranding"
+      }
+    }
+  },
+
+  "whyChooseUs": {
+    "subtitle": "Why Choose Us",
+    "titlePart1": "Why",
+    "titlePart2": "Choose Us",
+    "cta": "Get in touch",
+    "stat1Title": "Successful Projects\nCompleted",
+    "stat1Desc": "For over a decade, we’ve been shaping digital experiences and building strong brands.",
+    "stat1DescHighlight": "Our years of knowledge ensure every project is backed by skill, strategy, and creativity.",
+    "stat2Title": "Customer\nSatisfaction Rate",
+    "stat2Desc": "We measure success by the impact we create. With a near-perfect satisfaction rate,",
+    "stat2DescHighlight": "our clients trust us to deliver solutions that exceed expectations every time."
+  },
+
+  "testimonials": {
+    "subtitle": "TESTIMONIALS",
+    "titlePart1": "SHARED",
+    "titlePart2": "SUCCESS",
+    "cta": "GET IN TOUCH",
+    "items": {
+      "1": {
+        "title": "Results-Driven Approach...",
+        "desc": "We saw immediate results in our online visibility and engagement. Their strategies are effective, data-driven, and tailored to our needs.",
+        "author": "Emily Carter",
+        "rate": "4.9",
+        "img": "/images/client-01.jpg"
+      },
+      "2": {
+        "title": "Innovative Solutions...",
+        "desc": "They consistently deliver fresh ideas and innovative solutions that keep our brand ahead of the curve. A true asset to our business.",
+        "author": "James Lawson",
+        "rate": "5.0",
+        "img": "/images/client-02.jpg"
+      },
+      "3": {
+        "title": "Professional Team",
+        "desc": "They showed professionalism at every stage. The results exceeded expectations.",
+        "author": "Michael Ross",
+        "rate": "5.0",
+        "img": "/images/client-01.jpg"
+      },
+      "4": {
+        "title": "Creative Excellence",
+        "desc": "The design quality is fantastic. They captured our brand values perfectly.",
+        "author": "Sarah Jenkins",
+        "rate": "4.8",
+        "img": "/images/client-02.jpg"
+      },
+      "5": {
+        "title": "Strategic Growth",
+        "desc": "A partner that thinks about business growth beyond just design. Highly recommended.",
+        "author": "David Miller",
+        "rate": "5.0",
+        "img": "/images/client-01.jpg"
+      }
+    }
+  },
+
+  "quickHelp": {
+    "subTitle": "QUICK HELP",
+    "titlePart1": "Common",
+    "titlePart2": "Question",
+    "ctaLabel": "Any questions?",
+    "askBtn": "ASK A QUESTION ✦",
+    "items": {
+      "q1": "What services do you offer?",
+      "a1": "We provide comprehensive branding, web design, and digital strategy services tailored to your business needs.",
+      "q2": "How long does a project take?",
+      "a2": "Typically, a standard project takes 4-8 weeks depending on the complexity and feedback cycles.",
+      "q3": "Do you work with all industries?",
+      "a3": "Yes, we have experience across tech, fashion, lifestyle, and corporate sectors.",
+      "q4": "Can you customize my package?",
+      "a4": "Absolutely. We offer flexible packages that can be adjusted based on your specific goals.",
+      "q5": "How can we start working?",
+      "a5": "Just click the 'Ask a Question' button below or contact us via email to schedule an initial consultation."
+    }
+  }
+}

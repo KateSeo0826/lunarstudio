@@ -1,0 +1,206 @@
+{
+  "home": {
+    "contactLink": "비즈니스를 위한 문의하기",
+    "header": "루나스튜디오에 오신 것을 환영합니다",
+    "learnLink": "우리에 대해 알아보기",
+    "subheader": "다국어 LunarStudio 웹사이트입니다. next-intl을 사용합니다."
+  },
+  "about": {
+    "subTag": "브랜드 전략과 웹 제작을 함께하는 파트너",
+    "sloganLine1": "루나르 스튜디오는",
+    "sloganPoint1": "광고대행사의 전략적 기획력",
+    "sloganConnector": "과",
+    "sloganPoint2": "프로덕션의 강력한 실행력",
+    "sloganLine2Part1": "을 결합한",
+    "sloganLine2Part2": "크리에이티브 에이전시입니다.",
+    "descTitle": "영상 중심의 콘텐츠 마케팅 에이전시",
+    "descLine1": "단순히 멋진 영상을 만드는 것을 넘어,",
+    "descLine2": "브랜드의 메시지를 명확하게 전달하고",
+    "descHighlight1": "성과로 이어지는 콘텐츠를 완성하는 것",
+    "descLine3": "한화생명, 아모레퍼시픽, 롯데시네마 등",
+    "descLine4": "굴지의 대기업과 함께하며 쌓아온 경험을 바탕으로",
+    "descHighlight2": "효율적인 마케팅 메시지",
+    "descHighlight3": "강렬한 셀링포인트",
+    "descFinal": "99%의 치밀한 전략에 1%의 감각을 더해, 브랜드가 기억되고 사랑받는 결과물을 만들어내겠습니다."
+  },
+  "navbar": {
+    "home": "홈",
+    "about": "회사소개",
+    "contact": "문의하기",
+    "projects": "프로젝트",
+    "services": "서비스",
+    "blog": "블로그"
+  },
+  "intro": {
+    "subtitle": "디자인 중심의 사고",
+    "titleMain": "우리는 브랜드의 가치를 높이는",
+    "titleSecondary": "디지털 경험을 설계하여 청중의 몰입을 이끌어냅니다™.",
+    "description": "전략과 디자인, 기술의 결합을 통해 아이디어를 의미 있는 디지털 경험으로 전환합니다. 우리는 상상력과 정교함을 바탕으로 성장을 이끄는 대담한 결과물을 만들어냅니다.",
+    "ourStory": "브랜드 스토리",
+    "contactUs": "문의하기"
+  },
+
+  "projects": {
+    "ourPortfolio": "우리의 포트폴리오",
+    "titlePart1": "Selected",
+    "titlePart2": "Work",
+    "currentYear": "©2026",
+    "items": {
+      "niji": {
+        "name": "니지스시 레스토랑",
+        "category": "디자인",
+        "description": "“Niji는 일본 스시 레스토랑의 웹사이트를 제작한 프로젝트입니다. 디자인과 사용자 경험을 섬세하게 다듬어 특별한 온라인 경험을 제공합니다."
+      },
+      "mobile": {
+        "name": "모바일",
+        "category": "아이덴티티"
+      },
+      "reality": {
+        "name": "리얼리티",
+        "category": "전략"
+      },
+      "ecology": {
+        "name": "에콜로지",
+        "category": "리브랜딩"
+      }
+    }
+  },
+  "whyChooseUs": {
+    "subtitle": "왜 우리인가요 —",
+    "titlePart1": "Why",
+    "titlePart2": "Choose Us",
+    "cta": "문의하기",
+    "stat1Title": "성공적으로 완료된\n프로젝트들",
+    "stat1Desc": "10년 넘게 우리는 디지털 경험을 형성하고 강력한 브랜드를 구축해 왔습니다.",
+    "stat1DescHighlight": "우리의 오랜 노하우는 모든 프로젝트가 기술, 전략 및 창의성으로 뒷받침됨을 보장합니다.",
+    "stat2Title": "고객 서비스\n만족도",
+    "stat2Desc": "우리는 우리가 만드는 영향력으로 성공을 측정합니다. 완벽에 가까운 만족도로,",
+    "stat2DescHighlight": "고객들은 우리가 매번 기대를 뛰어넘는 솔루션을 제공할 것이라 믿습니다."
+  },
+  "ourServices": {
+    "subtitle": "우리의 역량",
+    "titlePart1": "Creative",
+    "titlePart2": "Solutions",
+    "services": {
+      "branding": {
+        "title": "브랜딩",
+        "image": "https://cdn.prod.website-files.com/692e410b4406ea2cf410f589/6986fbf4ece7ff793d251422_pic3.webp",
+        "tags": [
+          "Brand Identity",
+          "Naming",
+          "Guidelines",
+          "Creative Direction",
+          "Brand Positioning"
+        ]
+      },
+      "design": {
+        "title": "디자인",
+        "image": "https://cdn.prod.website-files.com/692e410b4406ea2cf410f589/6986fbf4fdd0e2c6bcb40546_pic2.webp",
+        "tags": [
+          "UI/UX",
+          "Web Design",
+          "Product Design",
+          "Design Systems",
+          "Wireframing",
+          "Prototyping"
+        ]
+      },
+      "development": {
+        "title": "개발",
+        "image": "https://cdn.prod.website-files.com/692e410b4406ea2cf410f589/6986fbf48bef78c279177f0c_pic1.webp",
+        "tags": [
+          "Web Development",
+          "Webflow",
+          "FSE Themes",
+          "Performance",
+          "Accessibility"
+        ]
+      },
+      "content": {
+        "title": "콘텐츠",
+        "image": "https://cdn.prod.website-files.com/692e410b4406ea2cf410f589/6986fbf4774ed7ceb77c06f2_pic4.webp",
+        "tags": [
+          "Copywriting",
+          "Storytelling",
+          "Content Strategy",
+          "Motion Design",
+          "Video Editing"
+        ]
+      },
+      "marketing": {
+        "title": "마케팅",
+        "image": "https://cdn.prod.website-files.com/692e410b4406ea2cf410f589/6986fc59d2fc284c294488a5_pic5.webp",
+        "tags": [
+          "Digital Strategy",
+          "SEO",
+          "Analytics",
+          "Social Media",
+          "Campaign Design",
+          "Landing Pages"
+        ]
+      }
+    }
+  },
+  "testimonials": {
+    "subtitle": "TESTIMONIALS",
+    "titlePart1": "SHARED",
+    "titlePart2": "SUCCESS",
+    "cta": "GET IN TOUCH",
+    "items": {
+      "1": {
+        "title": "Results-Driven Approach...",
+        "desc": "온라인 가시성과 참여도에서 즉각적인 결과를 얻었습니다. 그들의 전략은 효과적이고 데이터 중심적이며 우리의 니즈에 맞게 조정되었습니다.",
+        "author": "Emily Carter",
+        "rate": "4.9",
+        "img": "/images/client-01.jpg"
+      },
+      "2": {
+        "title": "Innovative Solutions...",
+        "desc": "그들은 우리 브랜드가 앞서 나갈 수 있도록 신선한 아이디어와 혁신적인 솔루션을 지속적으로 제공합니다. 우리 비즈니스의 진정한 자산입니다.",
+        "author": "James Lawson",
+        "rate": "5.0",
+        "img": "/images/client-02.jpg"
+      },
+      "3": {
+        "title": "Professional Team",
+        "desc": "모든 단계에서 전문성을 보여주었습니다. 결과물은 기대 이상이었고 소통 또한 매우 원활했습니다.",
+        "author": "Michael Ross",
+        "rate": "5.0",
+        "img": "/images/client-01.jpg"
+      },
+      "4": {
+        "title": "Creative Excellence",
+        "desc": "디자인 퀄리티가 환상적입니다. 우리 브랜드의 가치를 시각적으로 완벽하게 풀어냈습니다.",
+        "author": "Sarah Jenkins",
+        "rate": "4.8",
+        "img": "/images/client-02.jpg"
+      },
+      "5": {
+        "title": "Strategic Growth",
+        "desc": "단순한 디자인을 넘어 비즈니스의 성장을 고민하는 파트너입니다. 강력히 추천합니다.",
+        "author": "David Miller",
+        "rate": "5.0",
+        "img": "/images/client-01.jpg"
+      }
+    }
+  },
+  "quickHelp": {
+    "subTitle": "QUICK HELP",
+    "titlePart1": "COMMON",
+    "titlePart2": "QUESTION",
+    "ctaLabel": "궁금한 점이 있으신가요?",
+    "askBtn": "문의하기 ✦",
+    "items": {
+      "q1": "어떤 서비스를 제공하나요?",
+      "a1": "우리는 귀하의 비즈니스 니즈에 맞춘 종합적인 브랜딩, 웹 디자인 및 디지털 전략 서비스를 제공합니다.",
+      "q2": "프로젝트 기간은 얼마나 걸리나요?",
+      "a2": "일반적으로 표준 프로젝트는 복잡성과 피드백 주기에 따라 4-8주가 소요됩니다.",
+      "q3": "모든 산업 분야와 협업하시나요?",
+      "a3": "네, 저희는 기술, 패션, 라이프스타일 및 기업 부문 전반에 걸친 경험을 보유하고 있습니다.",
+      "q4": "패키지를 맞춤화할 수 있나요?",
+      "a4": "물론입니다. 특정 목표에 따라 조정 가능한 유연한 패키지를 제공합니다.",
+      "q5": "어떻게 작업을 시작할 수 있나요?",
+      "a5": "아래 '문의하기' 버튼을 클릭하거나 이메일을 통해 연락주시면 초기 상담 일정을 잡아드립니다."
+    }
+  }
+}
