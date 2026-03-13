@@ -5,29 +5,37 @@ import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import styles from "./about.module.css";
 import CoreValueSection from "../../../components/CoreValueSection";
+
 export default function AboutSection() {
   const t = useTranslations("about");
 
-  // 1. 위에서 아래로 천천히 도착
   const moveDown = {
     initial: { y: -100, opacity: 0 },
     whileInView: { y: 0, opacity: 1 },
     viewport: { once: true },
-    transition: { duration: 2.5, ease: [0.22, 1, 0.36, 1] },
+    transition: { duration: 2.5, ease: [0.22, 1, 0.36, 1] as const }, // as const 추가
   };
 
   const lineReveal = {
     initial: { width: "0%" },
     whileInView: { width: "100%" },
     viewport: { once: true },
-    transition: { duration: 4.0, ease: [0.65, 0, 0.35, 1], delay: 0.5 },
+    transition: {
+      duration: 4.0,
+      ease: [0.65, 0, 0.35, 1] as const,
+      delay: 0.5,
+    },
   };
 
   const imageReveal = {
     initial: { clipPath: "inset(0% 0% 100% 100%)", opacity: 0 },
     whileInView: { clipPath: "inset(0% 0% 0% 0%)", opacity: 1 },
     viewport: { once: true },
-    transition: { duration: 4.5, ease: [0.65, 0, 0.35, 1], delay: 1.0 },
+    transition: {
+      duration: 4.5,
+      ease: [0.65, 0, 0.35, 1] as const,
+      delay: 1.0,
+    },
   };
 
   const textGradientReveal = {
@@ -113,10 +121,8 @@ export default function AboutSection() {
                 {t("sloganPoint2")}
               </motion.span>
               <p>{t("sloganLine2Part1")}</p>{" "}
-              {/* '을 결합한' 부분만 따로 분리 권장 */}
             </div>
             <div>{t("sloganLine2Part2")}</div>{" "}
-            {/* '크리에이티브 에이전시입니다' */}
           </motion.div>
         </div>
       </div>

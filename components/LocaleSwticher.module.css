@@ -35,7 +35,7 @@
   background: rgba(0, 0, 0, 0.7);
 }
 .locale:hover {
-  box-shadow: 0 0 0 2px rgba(28, 225, 204, 0.6);
+  box-shadow: 0 0 0 2px rgba(76, 94, 241, 0.9);
 }
 .locale select:focus {
   outline: none;

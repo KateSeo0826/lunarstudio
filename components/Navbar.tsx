@@ -3,12 +3,11 @@
 import { useEffect, useMemo, useState } from "react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
-import { motion } from "framer-motion"; // 추가
+import { motion } from "framer-motion";
 import styles from "./Navbar.module.css";
 import LocaleSwitcher from "./LocaleSwitcher";
 import { useTranslations } from "next-intl";
 
-// 애니메이션 설정
 const charVariants = {
   initial: { y: 0, opacity: 1 },
   hover: (i: number) => ({
@@ -22,7 +21,6 @@ const charVariants = {
   }),
 };
 
-// 글자 분리 컴포넌트 (반복 사용을 위해 내부 정의)
 const AnimatedLabel = ({ label }: { label: string }) => (
   <motion.span
     initial="initial"
