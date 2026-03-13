@@ -18,7 +18,11 @@
       {
         "name": "next"
       }
-    ]
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "@messages/*": ["messages/*"]
+    }
   },
   "include": [
     "next-env.d.ts",
