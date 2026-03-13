@@ -21,7 +21,7 @@ const charVariants = {
     transition: {
       duration: 0.5,
       delay: i * 0.03,
-      ease: "easeInOut",
+      ease: "easeInOut" as const,
     },
   }),
 };

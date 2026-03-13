@@ -4,12 +4,14 @@ import { useState, use } from "react";
 import styles from "./ProjectDetail.module.css";
 import { useTranslations } from "next-intl";
 
-export default function ProjectDetail({ params }) {
+interface ProjectDetailProps {
+  params: Promise<{ id: string }>;
+}
+export default function ProjectDetail({ params }: ProjectDetailProps) {
   const { id } = use(params);
   const t = useTranslations("projects");
   const [device, setDevice] = useState("pc");
 
-  // 데이터 추출
   const projectUrl = t(`items.${id}.url`);
   const services = t.raw(`items.${id}.services`) || [];
   const approach = t.raw(`items.${id}.details.approach`) || [];
@@ -20,7 +22,6 @@ export default function ProjectDetail({ params }) {
         <div className={styles.projectLeft}>
           <h1 className={styles.title}>{t(`items.${id}.name`)}</h1>
 
-          {/* Case Study 섹션 */}
           <div className={styles.caseStudy}>
             <div className={styles.detailItem}>
               <h4 className={styles.label}>Problem</h4>
@@ -74,7 +75,6 @@ export default function ProjectDetail({ params }) {
           </a>
         </div>
 
-        {/* 오른쪽: 목업 영역 */}
         <div className={styles.projectRight}>
           <div className={styles.deviceToggle}>
             <button

@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import {
   motion,
   useSpring,
@@ -16,7 +16,6 @@ export default function OurServices() {
   const [hoveredKey, setHoveredKey] = useState<string | null>(null);
   const [isMounted, setIsMounted] = useState(false);
 
-  // 마우스 좌표 로직
   const mouseX = useMotionValue(0);
   const mouseY = useMotionValue(0);
   const springX = useSpring(mouseX, { damping: 25, stiffness: 150 });

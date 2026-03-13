@@ -5,7 +5,6 @@ import { motion } from "framer-motion";
 import styles from "./contact.module.css";
 import QuickHelp from "../../../components/QuickHelp";
 
-// 1. 반드시 'export default'가 붙어야 합니다.
 export default function ContactPage() {
   const [status, setStatus] = useState("");
 

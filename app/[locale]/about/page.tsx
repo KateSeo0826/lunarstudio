@@ -42,7 +42,7 @@ export default function AboutSection() {
     initial: { backgroundPosition: "100% 0%" },
     whileInView: { backgroundPosition: "0% 0%" },
     viewport: { once: true },
-    transition: { duration: 3.0, delay: 3.5, ease: "easeInOut" },
+    transition: { duration: 3.0, delay: 3.5, ease: "easeInOut" as const },
   };
 
   return (
@@ -103,7 +103,6 @@ export default function AboutSection() {
                 whileInView="whileInView"
                 viewport={{ once: true }}
                 className={styles.colorChangeText}
-                transition={{ ...textGradientReveal.transition, delay: 2.0 }}
               >
                 {t("sloganPoint1")}
               </motion.span>

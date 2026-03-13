@@ -54,31 +54,6 @@ export default function WhyChooseUs() {
       <div className={styles.container}>
         <div className={styles.topGrid}>
           <div className={styles.titleArea}>
-            {/* <div className={styles.marqueeRow}>
-              <Image
-                width={16}
-                height={16}
-                src="https://cdn.prod.website-files.com/68ee74b7102caefef6ce7890/68f7ca5b06eb018b17750d6c_star-icon.svg"
-                alt="asterisk"
-                className={styles.star}
-              />
-
-              <div className={styles.marqueeContainer}>
-                <motion.div
-                  animate={{ x: ["0%", "-50%"] }}
-                  transition={{
-                    duration: 12,
-                    repeat: Infinity,
-                    ease: "linear",
-                  }}
-                  className={styles.marquee}
-                >
-                  <span>{t("subtitle")} — </span>
-                  <span>{t("subtitle")} — </span>
-                </motion.div>
-              </div>
-            </div> */}
-
             <div className={styles.headingWrap}>
               <h2 className={styles.heading}>
                 <span className={styles.dot}></span>

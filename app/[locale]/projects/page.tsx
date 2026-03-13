@@ -1,4 +1,3 @@
-// app/[locale]/projects/page.tsx
 "use client";
 
 import styles from "./projects.module.css";
