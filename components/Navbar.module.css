@@ -1,0 +1,410 @@
+.wrap {
+  position: fixed; /* sticky -> fixed */
+  top: 1.5rem;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  pointer-events: none; /* 가운데 바만 클릭되게 */
+}
+
+/* 기본 상태: TOP */
+.navbar {
+  margin: 1.5rem auto;
+  width: 80%;
+  height: 64px;
+  pointer-events: auto; /* navbar만 클릭 가능 */
+  background: #0e0e0e;
+  border-radius: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.5rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+/* 스크롤 상태 (살짝 더 선명/그림자) */
+.wrapScrolled .navbar {
+  background: rgba(14, 14, 14, 0.85); /* 살짝 투명하게 */
+  backdrop-filter: blur(12px); /* 뒤 배경 흐림 효과 */
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  transform: translateY(-4px);
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  min-width: 0;
+}
+
+.brandName {
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  color: rgba(255, 255, 255, 0.92);
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.brandSub {
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  color: rgba(255, 255, 255, 0.55);
+  text-transform: uppercase;
+  white-space: nowrap;
+  padding-left: 12px;
+  border-left: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+/* CENTER pills */
+.pills {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.pill {
+  padding: 0.675rem 1.5rem;
+  border-radius: 100px;
+  background: #70707040;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.86);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+
+  transition:
+    transform 140ms ease,
+    background 140ms ease,
+    border-color 140ms ease;
+}
+
+.pill:hover {
+  transform: translateY(-1px);
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.18);
+}
+
+.active {
+  background: rgba(255, 255, 255, 0.16) !important;
+  border-color: rgba(255, 255, 255, 0.26) !important;
+}
+
+/* RIGHT */
+.right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+/* LocaleSwitcher 영역 */
+.locale {
+  display: flex;
+  align-items: center;
+}
+
+/* 동그라미 버튼 */
+.circleButton {
+  width: 48px;
+  height: 48px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.08);
+  cursor: pointer;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  transition:
+    transform 140ms ease,
+    background 140ms ease,
+    border-color 140ms ease;
+}
+
+.circleButton:hover {
+  transform: translateY(-1px);
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.18);
+}
+
+/* 햄버거 아이콘 */
+.circleIcon {
+  width: 20px;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 2px;
+  position: relative;
+  display: block;
+}
+
+.circleIcon::before,
+.circleIcon::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 20px;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 2px;
+}
+
+.circleIcon::before {
+  top: -6px;
+}
+.circleIcon::after {
+  top: 6px;
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.42);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 220ms ease;
+  z-index: 80;
+}
+
+.overlayOpen {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* 밑에서 올라오는 패널 */
+.panel {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 90;
+  transform: translateY(110%);
+  transition: transform 480ms cubic-bezier(0.2, 0.9, 0.2, 1);
+  padding: 14px;
+}
+
+.panelOpen {
+  transform: translateY(0%);
+}
+
+.panelTop {
+  max-width: 520px;
+  margin: 0 auto 12px;
+  background: rgba(28, 28, 28, 0.92);
+  border-radius: 999px;
+  padding: 10px 10px 10px 18px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+}
+
+.panelBrand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+}
+
+.panelBrandName {
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  color: rgba(255, 255, 255, 0.92);
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.panelBrandSub {
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  color: rgba(255, 255, 255, 0.55);
+  text-transform: uppercase;
+  white-space: nowrap;
+  padding-left: 12px;
+  border-left: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+/* 흰 카드 */
+.card {
+  max-width: 520px;
+  margin: 0 auto;
+
+  background: var(--white) fff;
+  border-radius: 26px;
+  padding: 22px 20px 18px;
+  box-shadow: 0 18px 60px rgba(0, 0, 0, 0.25);
+}
+
+.menuList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menuList li + li {
+  margin-top: 16px;
+}
+
+.menuItem {
+  text-decoration: none;
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+}
+
+.menuLabel {
+  font-size: 44px;
+  line-height: 0.95;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  color: #111;
+  text-transform: uppercase;
+}
+
+.menuNo {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: rgba(0, 0, 0, 0.35);
+}
+
+.panelFooter {
+  margin-top: 22px;
+}
+
+.cta {
+  width: 100%;
+  height: 60px;
+  border-radius: 999px;
+  background: #0d0d0d;
+  color: var(--white);
+  text-decoration: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.ctaStar {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+.panelLocale {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+/* PC에서는 동그라미 메뉴 버튼을 숨깁니다 */
+.circleButton {
+  display: none; /* 기본적으로 숨김 */
+}
+
+/* RIGHT 영역 내 정렬 최적화 */
+.right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+/* ===== 반응형: 좁으면 중앙 pills 줄이기 ===== */
+@media (max-width: 980px) {
+  .navbar {
+    grid-template-columns: 1.3fr 1.2fr 1.1fr;
+  }
+  .pillsHideSm {
+    display: none;
+  }
+}
+
+/* ----- 모바일 대응 (대략 850px 이하) ----- */
+@media (max-width: 850px) {
+  /* 1. 중앙 Pills와 기존 언어선택기 숨기기 */
+  .pills,
+  .locale {
+    display: none;
+  }
+
+  /* 2. 동그라미 버튼 보이기 */
+  .circleButton {
+    display: inline-flex;
+  }
+
+  /* 3. 내비바 좌우 여백 및 정렬 조정 */
+  .navbar {
+    padding: 0 1rem;
+    height: 56px; /* 모바일에서 조금 더 슬림하게 */
+  }
+
+  /* 4. 브랜드 보조명칭 숨기기 (공간 확보) */
+  .brandSub {
+    display: none;
+  }
+
+  /* 5. 패널 내부의 카드 사이즈 최적화 */
+  .card {
+    width: calc(100% - 8px); /* 화면 끝까지 거의 꽉 차게 */
+    padding: 24px 20px;
+  }
+}
+
+/* 패널(aside) 내부의 버튼은 항상 보여야 하므로 강제 표시 */
+.panelTop .circleButton {
+  display: inline-flex;
+}
+
+/* ----- 모바일 대응 핵심 수정 ----- */
+@media (max-width: 720px) {
+  /* 3. 브랜드 로고 크기 조절 */
+  .brandName {
+    font-size: 14px; /* 글자 크기 살짝 줄임 */
+  }
+
+  /* 4. 동그라미 버튼 크기 조절 */
+  .circleButton {
+    width: 40px; /* 48px -> 40px */
+    height: 40px;
+  }
+
+  /* 5. 햄버거 아이콘 사이즈 조절 */
+  .circleIcon,
+  .circleIcon::before,
+  .circleIcon::after {
+    width: 16px; /* 20px -> 16px */
+  }
+}
+
+@media (max-width: 420px) {
+  .menuLabel {
+    font-size: 38px;
+  }
+}

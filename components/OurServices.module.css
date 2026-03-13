@@ -1,0 +1,239 @@
+.section {
+  background-color: #0e0e0e;
+  color: var(--white);
+  padding: clamp(30px, 10vw, 60px) 0;
+  border-radius: 1.25rem;
+}
+
+.container {
+  background-color: #000;
+  color: var(--white);
+  padding: 60px 0;
+  position: relative;
+  overflow: hidden;
+  cursor: none;
+}
+
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.headingWrap {
+  margin-top: 30px;
+  position: relative;
+  display: inline-block;
+}
+
+.heading {
+  position: relative;
+  font-size: clamp(2.5rem, 8vw, 5rem);
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 0.9;
+  letter-spacing: -0.04em;
+  color: var(--white);
+  z-index: 1;
+}
+
+.dot {
+  position: absolute;
+  left: -10px;
+  top: -15px;
+  width: 50px;
+  height: 50px;
+  background-color: var(--yellow);
+  border-radius: 50%;
+  z-index: -1;
+  animation: floatAndScale 4s infinite ease-in-out;
+}
+
+@keyframes floatAndScale {
+  0% {
+    transform: translate(0, 0) scale(0.8);
+  }
+  50% {
+    transform: translate(5px, -10px) scale(1);
+  }
+  100% {
+    transform: translate(0, 0) scale(0.8);
+  }
+}
+
+@media (max-width: 768px) {
+  .dot {
+    width: 30px;
+    height: 30px;
+    left: -15px;
+    top: -10px;
+  }
+}
+
+.cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 12px;
+  height: 12px;
+  background-color: var(--yellow);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  mix-blend-mode: difference;
+  transition: transform 0.2s ease-out;
+}
+
+.headerArea {
+  margin-bottom: 40px;
+}
+
+.heading {
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+}
+
+.highlight {
+  color: var(--green);
+}
+
+.serviceList {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.serviceItem {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 50px 0;
+  position: relative;
+  transition: border-color 0.3s ease;
+}
+
+.serviceItem:hover {
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.itemContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.titleWrap {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.itemNumber {
+  font-size: 16px;
+  font-family: monospace;
+  opacity: 0.3;
+  padding-top: 12px;
+}
+
+.title {
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.tagContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: flex-end;
+  max-width: 450px;
+}
+
+.imageFollower {
+  width: 300px;
+  height: 400px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+  background-color: #111;
+}
+
+.previewImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.serviceItem {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 50px 0;
+  position: relative;
+  transition: all 0.4s ease;
+}
+
+.serviceItem:hover {
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.itemContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  color: #fff;
+}
+
+.tagContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: flex-end;
+  max-width: 450px;
+}
+
+.tag {
+  font-size: 13px;
+  font-weight: 500;
+  padding: 8px 18px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 100px;
+  white-space: nowrap;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.5);
+  transition: all 0.3s ease;
+}
+
+.serviceItem:hover .tag {
+  border-color: rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 1);
+}
+
+.tag:hover {
+  background: #dad6ff !important;
+  border-color: #dad6ff !important;
+  color: #000 !important;
+}
+
+@media (max-width: 768px) {
+  .itemContent {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .tagContainer {
+    justify-content: flex-start;
+  }
+
+  .imageFollower {
+    display: none;
+  }
+
+  .container {
+    cursor: auto;
+  }
+
+  .cursor {
+    display: none;
+  }
+}

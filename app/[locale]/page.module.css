@@ -1,0 +1,26 @@
+.mainContainer {
+  background-color: #f8f8f8;
+  display: flex;
+  flex-direction: column;
+  padding: 0 !important;
+  margin: 0 !important;
+  gap: 0 !important;
+  width: 100%;
+}
+
+.heroSectionWrapper {
+  background-color: #121212;
+  margin: 4px;
+  border-radius: 32px;
+  width: calc(100% - 8px);
+}
+
+.introSectionWrapper {
+  background-color: #f8f8f8;
+  padding: 100px 20px;
+  width: 100%;
+}
+
+.projectSectionWrapper {
+  width: 100%;
+}

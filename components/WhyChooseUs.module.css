@@ -1,0 +1,201 @@
+.whyUsSection {
+  background-color: #f8f8f8;
+  padding: clamp(30px, 10vw, 60px) 0;
+  transition: all 0.3s ease;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.headingWrap {
+  position: relative;
+  margin-top: 30px;
+  display: inline-block;
+}
+
+.heading {
+  position: relative;
+  font-size: clamp(2.5rem, 8vw, 5rem);
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 0.9;
+  letter-spacing: -0.04em;
+  color: #000; /* 글자는 검정 */
+  z-index: 1;
+}
+
+.dot {
+  position: absolute;
+  left: -10px;
+  top: -15px;
+  width: 50px;
+  height: 50px;
+  background-color: #4c5ef1;
+  border-radius: 50%;
+  z-index: -1;
+  animation: floatAndScale 4s infinite ease-in-out;
+}
+
+.highlight {
+  color: #000;
+}
+
+@keyframes floatAndScale {
+  0% {
+    transform: translate(0, 0) scale(0.8);
+  }
+  50% {
+    transform: translate(5px, -10px) scale(1);
+  }
+  100% {
+    transform: translate(0, 0) scale(0.8);
+  }
+}
+
+@media (max-width: 768px) {
+  .dot {
+    width: 30px;
+    height: 30px;
+    left: -15px;
+    top: -10px;
+  }
+}
+
+.topGrid {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: clamp(20px, 8vw, 40px);
+  gap: 24px;
+}
+
+.highlight {
+  color: #888;
+}
+
+.mainGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+}
+
+.visualWrap {
+  position: relative;
+  border-radius: 32px;
+  overflow: hidden;
+  height: 100%;
+  min-height: clamp(300px, 50vh, 500px); /* 모바일 높이 대응 */
+}
+
+.backgroundVideo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.visualContent {
+  position: absolute;
+  color: var(--white);
+  inset: 0;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cardBlock {
+  background: var(--white);
+  border-radius: 32px;
+  padding: clamp(24px, 5vw, 40px);
+  margin-bottom: 24px;
+}
+
+.statHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.rollNumberComponent {
+  height: clamp(3rem, 10vw, 4rem);
+  overflow: hidden;
+  font-size: clamp(2.5rem, 10vw, 3.5rem);
+  font-weight: 700;
+  display: flex;
+  line-height: 1;
+}
+
+.statsNumber {
+  height: clamp(3rem, 10vw, 4rem);
+  display: flex;
+  align-items: center;
+}
+
+.statSubtitle {
+  font-size: clamp(1.1rem, 4vw, 1.25rem);
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.cardLine {
+  margin: 20px 0;
+  border-top: 1px solid #8d8d8d;
+  width: 100%;
+}
+
+.statTextArea {
+  text-align: left;
+  max-width: 100%;
+}
+
+.statDescription {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #121212;
+}
+
+.textSecondary {
+  color: #8d8d8d;
+}
+
+.mainButton {
+  background: #121212;
+  color: #fafafa;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btnIcon {
+  width: 18px;
+  height: 18px;
+}
+
+@media (max-width: 1024px) {
+  .mainGrid {
+    grid-template-columns: 1fr; /* 탭/모바일에서 1열 배치 */
+  }
+}
+
+@media (max-width: 768px) {
+  .topGrid {
+    flex-direction: column;
+    align-items: flex-start; /* 세로 정렬 */
+  }
+}
+
+@media (max-width: 480px) {
+  .statHeader {
+    flex-direction: column;
+    align-items: flex-start; /* 아주 작은 화면에선 세로로 */
+    gap: 10px;
+  }
+}

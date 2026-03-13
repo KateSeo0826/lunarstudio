@@ -1,0 +1,205 @@
+.section {
+  padding: 140px 0;
+  background-color: var(--white);
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.headerTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-bottom: 25px;
+}
+
+.mainTitle {
+  font-size: clamp(3rem, 6vw, 5.5rem);
+  font-weight: 800;
+  line-height: 1.05;
+  letter-spacing: -2px;
+}
+
+.subTag {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #111;
+  max-width: 300px;
+  text-align: right;
+}
+
+.dividerWrapper {
+  width: 100%;
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+.dividerLine {
+  height: 100%;
+  background-color: #111;
+}
+
+.imageWrapper {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 12px;
+  overflow: hidden;
+  margin: 120px 0;
+}
+
+.mainImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.sloganArea {
+  margin-bottom: 150px;
+}
+
+.sloganText {
+  font-size: clamp(1.8rem, 4vw, 3.2rem);
+  font-weight: 800;
+  line-height: 1.4;
+}
+
+/* 왼쪽에서 오른쪽으로 색 채우는 핵심 스타일 */
+.highlightText {
+  display: inline-block;
+  background: linear-gradient(90deg, #8a2be2 50%, #000 50%);
+  background-size: 200% 100%;
+  background-position: 100% 0; /* 초기 상태: 검정색만 보임 */
+  background-repeat: no-repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: background-position 0s; /* Framer Motion이 제어함 */
+}
+
+/* Framer Motion의 backgroundSize 애니메이션에 맞춰 보조 */
+.highlightText {
+  background: linear-gradient(90deg, #8a2be2 100%, #000 100%);
+  background-repeat: no-repeat;
+  background-size: 0% 100%; /* Framer Motion이 100%로 늘림 */
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: #000; /* 폴백 컬러 */
+  -webkit-text-fill-color: transparent;
+}
+
+.bottomGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+}
+
+.starSymbol {
+  width: 180px;
+  height: 180px;
+}
+
+.descTitle {
+  font-size: 1.4rem;
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+
+.descContent {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #444;
+}
+
+.purpleText {
+  color: #8a2be2;
+  font-weight: 700;
+}
+
+.descFooter {
+  font-size: 1.1rem;
+  font-weight: 800;
+  margin-top: 40px;
+}
+
+@media (max-width: 960px) {
+  .headerTop {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  .subTag {
+    text-align: left;
+  }
+  .bottomGrid {
+    grid-template-columns: 1fr;
+  }
+}
+.colorChangeText {
+  display: inline-block;
+  background: linear-gradient(to right, #8a2be2 50%, #000 50%);
+  background-size: 200% 100%;
+  background-position: 100% 0%;
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+/* 나머지 스타일 */
+.mainTitle {
+  font-size: clamp(3rem, 6vw, 5.5rem);
+  font-weight: 800;
+  line-height: 1.05;
+  letter-spacing: -2px;
+}
+.dividerWrapper {
+  width: 100%;
+  height: 2px;
+  background: rgba(0, 0, 0, 0.05);
+  margin-top: 20px;
+}
+.dividerLine {
+  height: 100%;
+  background: #111;
+}
+.sloganText {
+  display: flex;
+  flex-direction: column; /* 무조건 세로로 쌓기 */
+  gap: 12px;
+  font-size: clamp(1.8rem, 4vw, 3.2rem);
+  font-weight: 800;
+}
+
+/* 한 줄에 핵심단어(보라색)와 조사(검정색)를 가로로 배치 */
+.inlineRow {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  gap: 10px;
+}
+
+/* 보라색 변화 효과 */
+.colorChangeText {
+  display: inline-block;
+  background: linear-gradient(to right, #8a2be2 50%, #000 50%);
+  background-size: 200% 100%;
+  background-position: 100% 0%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  white-space: nowrap;
+}
+
+/* 조사는 그냥 검정색 */
+.inlineRow p {
+  color: #000;
+  margin: 0;
+}

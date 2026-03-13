@@ -1,0 +1,38 @@
+[
+  {
+    "id": "niji",
+    "name": "Niji",
+    "category": "Design",
+    "year": "2024",
+    "image": "/images/niji.jpg",
+    "logo": "/images/NIJI.svg",
+    "link": "/projects/niji"
+  },
+  {
+    "id": "mobile",
+    "name": "Mobile",
+    "category": "Identity",
+    "year": "2024",
+    "image": "/images/seraphine.jpg",
+    "logo": "/images/SERAPHINE.svg",
+    "link": "/project/mobile"
+  },
+  {
+    "id": "reality",
+    "name": "Reality",
+    "category": "Strategy",
+    "year": "2025",
+    "image": "https://cdn.prod.website-files.com/68ee74b7102caefef6ce78ac/68f2f30640607d568efc8b66_project-03-1.jpg",
+    "logo": "https://cdn.prod.website-files.com/68ee74b7102caefef6ce78ac/68f4ebeb64dfe9c5e3e0d4d0_logoipsum-280.svg",
+    "link": "/project/reality"
+  },
+  {
+    "id": "ecology",
+    "name": "Ecology",
+    "category": "Rebranding",
+    "year": "2025",
+    "image": "https://cdn.prod.website-files.com/68ee74b7102caefef6ce78ac/68f2f2ca3263a8d00aa698c8_project-04-1.jpg",
+    "logo": "https://cdn.prod.website-files.com/68ee74b7102caefef6ce78ac/68f4ebf5456c17720f4f2816_logoipsum-323.svg",
+    "link": "/project/ecology"
+  }
+]

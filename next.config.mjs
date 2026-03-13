@@ -1,6 +1,22 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  /* config options here */
-};
+import createNextIntlPlugin from 'next-intl/plugin';
 
-export default nextConfig;
+const withNextIntl = createNextIntlPlugin('./i18n/request.ts');
+
+const nextConfig = {
+  experimental: {
+    appDir: true
+  },
+  allowedDevOrigins: [
+    'http://localhost:3000',
+    'http://10.0.0.65:3000',
+
+  ],
+  images: {
+    remotePatterns: [new URL('https://cdn.prod.website-files.com/68ee74b7102caefef6ce78ac/**'),
+    new URL('https://cdn.prod.website-files.com/692e410b4406ea2cf410f589/**'
+    )
+    ],
+  },
+};
+export default withNextIntl(nextConfig);

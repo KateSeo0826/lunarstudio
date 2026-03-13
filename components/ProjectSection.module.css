@@ -1,0 +1,345 @@
+.section {
+  background: #000;
+  color: var(--white);
+  padding: clamp(30px, 10vw, 60px) 0;
+  transition: all 0.3s ease;
+  margin-left: -6px;
+  margin-right: -6px;
+  border-radius: 1.25rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.whiteBackground {
+  background-color: var(--white) fff !important;
+  color: #000000 !important;
+}
+.whiteBackground h2 {
+  color: #000000 !important;
+}
+
+.headingWrap {
+  position: relative;
+  margin-top: 30px;
+  display: inline-block;
+}
+
+.heading {
+  position: relative;
+  font-size: clamp(2.5rem, 8vw, 5rem);
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+  z-index: 1;
+}
+
+.dot {
+  position: absolute;
+  left: -10px;
+  top: -15px;
+  width: 50px;
+  height: 50px;
+  background-color: #e2f157;
+  border-radius: 50%;
+  z-index: -1;
+  animation: floatAndScale 4s infinite ease-in-out;
+}
+
+.highlight {
+  color: #000;
+}
+
+@keyframes floatAndScale {
+  0% {
+    transform: translate(0, 0) scale(0.8);
+  }
+  50% {
+    transform: translate(5px, -10px) scale(1);
+  }
+  100% {
+    transform: translate(0, 0) scale(0.8);
+  }
+}
+
+@media (max-width: 768px) {
+  .dot {
+    width: 30px;
+    height: 30px;
+    left: -15px;
+    top: -10px;
+  }
+}
+.topGrid {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: clamp(20px, 8vw, 40px);
+}
+
+.titleArea {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.highlight {
+  color: #8d8d8d;
+}
+
+.year {
+  font-size: clamp(1.5rem, 6vw, 4rem);
+  color: #8d8d8d;
+  font-weight: 700;
+  line-height: 0.85;
+  margin-bottom: 5px;
+}
+
+.projectList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px 2%;
+  align-items: flex-start;
+}
+
+.cardWrapper {
+  width: 49%;
+  height: auto;
+}
+
+.cardContent {
+  width: 100%;
+  aspect-ratio: 1.3 / 1;
+  background: #111;
+  border-radius: clamp(12px, 2vw, 24px);
+  overflow: hidden;
+  position: relative;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.cardHeader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 5;
+  height: clamp(40px, 5vw, 52px);
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.arrow {
+  z-index: 10;
+  cursor: pointer;
+  background-color: #70707026;
+  border: 1px solid #70707026;
+  border-radius: 100px;
+  justify-content: center;
+  align-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  transition: all 0.35s;
+  display: flex;
+  color: var(--white);
+}
+.name {
+  font-size: 0.8rem;
+  font-weight: 800;
+  color: #f8f8f8;
+  text-transform: uppercase;
+}
+.sep {
+  color: #f8f8f8;
+  margin: 0 5px;
+  opacity: 0.3;
+}
+.cat {
+  font-size: 0.75rem;
+  color: #777;
+}
+
+.imgBox {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* .imgBox::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+} */
+
+.logoContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  perspective: 1000px;
+  pointer-events: none;
+  overflow: visible; /* 로고가 움직일 수 있게 */
+}
+
+.logoItem {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backface-visibility: hidden; /* 뒤집힐 때 뒷면 안 보이게 */
+}
+
+.logoBox {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: clamp(80px, 12vw, 100px);
+}
+
+.logo {
+  z-index: 2;
+  width: 100%;
+}
+
+.marqueeRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+.star {
+  width: 16px;
+}
+.marqueeContainer {
+  width: 150px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.marquee {
+  font-size: 0.9rem;
+  color: #f8f8f8;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.whiteBackground .marqueeContainer {
+  color: #000000;
+}
+
+.buttonWrapper {
+  display: flex;
+  justify-content: left;
+  margin-top: clamp(60px, 10vw, 100px);
+  padding-bottom: 40px;
+}
+
+.allProjectsBtn {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background-color: #f8f8f8;
+  color: #121212;
+  padding: 16px 32px;
+  border-radius: 100px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  border: 1px solid var(--white);
+  transition: all 0.3s ease;
+}
+
+.btnIcon {
+  width: 14px;
+  height: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.allProjectsBtn:hover {
+  background-color: #000;
+  color: var(--white);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.whiteBackground .allProjectsBtn {
+  background-color: #000;
+  color: var(--white);
+  border: 1px solid #000;
+}
+
+.whiteBackground .allProjectsBtn:hover {
+  background-color: var(--white);
+  color: #000;
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.allProjectsBtn:hover {
+  background-color: #000;
+  color: var(--white);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.whiteBackground .allProjectsBtn:hover {
+  background-color: var(--white);
+  color: #000;
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.link {
+  color: #000;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3); /* 살짝 밑줄 추가 시 */
+}
+
+.link:hover {
+  color: #cccccc;
+}
+
+.whiteBackground .link {
+  color: #fafafa;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.whiteBackground .link:hover {
+  color: #666;
+}
+
+@media (max-width: 850px) {
+  .topGrid {
+    align-items: flex-start;
+  }
+  .cardWrapper {
+    width: 100%;
+    margin-bottom: 20vh;
+  }
+}

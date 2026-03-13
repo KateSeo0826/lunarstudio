@@ -1,0 +1,259 @@
+.section {
+  background-color: #f8f8f8;
+  padding: clamp(30px, 10vw, 60px) 0;
+  border-radius: 1.25rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.topGrid {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 60px;
+  gap: 20px;
+}
+
+.titleArea {
+  display: flex;
+  flex-direction: column;
+}
+
+.heading {
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 0.9;
+  text-transform: uppercase;
+}
+.headingWrap {
+  position: relative;
+  display: inline-block;
+}
+
+.heading {
+  position: relative;
+  font-size: clamp(2.5rem, 8vw, 5rem);
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 0.9;
+  letter-spacing: -0.04em;
+  color: #000;
+  z-index: 1;
+}
+
+.dot {
+  position: absolute;
+  left: -10px;
+  top: -15px;
+  width: 50px;
+  height: 50px;
+  background-color: var(--purple);
+  border-radius: 50%;
+  z-index: -1;
+  animation: floatAndScale 4s infinite ease-in-out;
+}
+
+@keyframes floatAndScale {
+  0% {
+    transform: translate(0, 0) scale(0.8);
+  }
+  50% {
+    transform: translate(5px, -10px) scale(1);
+  }
+  100% {
+    transform: translate(0, 0) scale(0.8);
+  }
+}
+
+/* 모바일 화면 조정 */
+@media (max-width: 768px) {
+  .dot {
+    width: 30px;
+    height: 30px;
+    left: -15px;
+    top: -10px;
+  }
+}
+.highlight {
+  color: #888;
+}
+
+.mainButton {
+  background: #121212;
+  color: #fafafa;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btnIcon {
+  color: #fafafa;
+  width: 18px;
+  height: 18px;
+}
+.sliderWrapper {
+  overflow: hidden;
+  margin: 0 -10px;
+}
+
+.track {
+  display: flex;
+  align-items: stretch;
+  gap: 20px;
+  padding: 20px 10px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 30%;
+  padding: 5px;
+  border: 1px solid #e6e6e6;
+  border-radius: 1.25rem;
+}
+
+.cardInner {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background: #e6e6e6;
+  border-radius: 1.25rem;
+  border: 1px solid #e6e6e6;
+  padding: 2rem;
+}
+
+.quoteIcon {
+  height: auto;
+  margin-bottom: 24px;
+  filter: invert(41%) sepia(82%) saturate(2692%) hue-rotate(218deg)
+    brightness(97%) contrast(98%);
+  transition: filter 0.3s ease;
+}
+
+.cardInner:hover .quoteIcon {
+  filter: invert(88%) sepia(31%) saturate(808%) hue-rotate(18deg)
+    brightness(105%) contrast(92%);
+}
+
+.cardTitle {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.cardText {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #444;
+  margin-bottom: 20px;
+  flex-grow: 1;
+  display: flex;
+  align-items: flex-start;
+}
+
+.clientInfo {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding-top: 10px;
+  border-top: 1px solid #eee;
+  margin-top: auto;
+}
+
+.avatarWrap {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.avatar {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.clientName {
+  font-weight: 700;
+}
+
+.ratingRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+}
+
+.controls {
+  display: flex;
+  justify-content: flex-end;
+  gap: 16px;
+  margin-top: 40px;
+}
+
+.arrowBtn {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  background: #ececec;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+/* 태블릿 구간 (Tablet) */
+@media (max-width: 1024px) {
+  .heading {
+    font-size: 4rem;
+  }
+
+  .card {
+    flex: 0 0 calc(50% - 10px);
+    min-width: calc(50% - 10px);
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 60px 0;
+  }
+
+  .topGrid {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+  }
+
+  .marqueeContainer {
+    width: 180px;
+  }
+
+  .heading {
+    font-size: 2.8rem;
+  }
+
+  .card {
+    flex: 0 0 100%;
+    min-width: 100%;
+  }
+
+  .cardInner {
+    padding: 30px;
+    min-height: auto;
+  }
+
+  .controls {
+    justify-content: center;
+  }
+}
