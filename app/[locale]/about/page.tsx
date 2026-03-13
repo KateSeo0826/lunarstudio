@@ -21,20 +21,29 @@ export default function AboutSection() {
     whileInView: { width: "100%" },
     viewport: { once: true },
     transition: {
-      duration: 4.0,
-      ease: [0.65, 0, 0.35, 1] as const,
-      delay: 0.5,
+      duration: 6.5,
+
+      ease: [0.33, 1, 0.68, 1] as const,
+      delay: 0.6,
     },
   };
 
   const imageReveal = {
-    initial: { clipPath: "inset(0% 0% 100% 100%)", opacity: 0 },
-    whileInView: { clipPath: "inset(0% 0% 0% 0%)", opacity: 1 },
+    initial: {
+      clipPath: "inset(0% 0% 100% 100%)",
+      opacity: 0,
+      scale: 1.05,
+    },
+    whileInView: {
+      clipPath: "inset(0% 0% 0% 0%)",
+      opacity: 1,
+      scale: 1,
+    },
     viewport: { once: true },
     transition: {
-      duration: 4.5,
-      ease: [0.65, 0, 0.35, 1] as const,
-      delay: 1.0,
+      duration: 5.5,
+      ease: [0.16, 1, 0.3, 1] as const,
+      delay: 0.8,
     },
   };
 
@@ -51,11 +60,11 @@ export default function AboutSection() {
         <header className={styles.header}>
           <div className={styles.headerTop}>
             <motion.h1 {...moveDown} className={styles.mainTitle}>
-              Your Story <br /> & Our Palette
+              Your Story <br /> & Our Studio
             </motion.h1>
             <motion.div
               {...moveDown}
-              transition={{ ...moveDown.transition, delay: 0.3 }}
+              transition={{ ...moveDown.transition, delay: 0.5 }}
               className={styles.subTag}
             >
               {t("subTag")}
@@ -103,6 +112,7 @@ export default function AboutSection() {
                 whileInView="whileInView"
                 viewport={{ once: true }}
                 className={styles.colorChangeText}
+                transition={{ ...textGradientReveal.transition, delay: 2.0 }}
               >
                 {t("sloganPoint1")}
               </motion.span>
