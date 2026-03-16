@@ -11,7 +11,14 @@ import {
 } from "react-icons/fa6";
 import Image from "next/image";
 
-const navItems = ["HOME", "ABOUT", "PROJECTS", "SERVICES", "BLOG", "CONTACT"];
+const navItems = [
+  { name: "HOME", path: "/" },
+  { name: "ABOUT", path: "/about" },
+  { name: "PROJECTS", path: "/projects" },
+  { name: "SERVICES", path: "/services" },
+  { name: "BLOG", path: "https://blog.naver.com/violetds03" },
+  { name: "CONTACT", path: "/contact" },
+];
 
 const charVariants = {
   initial: { y: 0, opacity: 1 },
@@ -34,16 +41,16 @@ export default function Footer() {
           <div className={styles.brandColumn}>
             <h2 className={styles.logo}>LunarStudio</h2>
             <div className={styles.socials}>
-              <Link href="#">
+              <Link href="https://www.instagram.com/__lunar.studio/">
                 <FaInstagram />
               </Link>
-              <Link href="#">
+              <Link href="https://x.com/">
                 <FaXTwitter />
               </Link>
-              <Link href="#">
+              <Link href="https://www.linkedin.com/">
                 <FaLinkedinIn />
               </Link>
-              <Link href="#">
+              <Link href="https://www.facebook.com/">
                 <FaFacebookF />
               </Link>
             </div>
@@ -69,16 +76,15 @@ export default function Footer() {
             <p className={styles.navTitle}>Navigation</p>
             <ul>
               {navItems.map((item) => (
-                <li key={item}>
-                  <Link
-                    href={`/${item.toLowerCase() === "home" ? "" : item.toLowerCase()}`}
-                  >
+                <li key={item.name}>
+                  <Link href={item.path}>
+                    {" "}
                     <motion.span
                       className={styles.navLink}
                       initial="initial"
                       whileHover="hover"
                     >
-                      {item.split("").map((char, i) => (
+                      {item.name.split("").map((char, i) => (
                         <motion.span
                           key={i}
                           custom={i}

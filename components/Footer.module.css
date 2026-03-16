@@ -1,7 +1,7 @@
 .footer {
+  width: 100%;
   background-color: var(--white);
   padding-top: 80px;
-  width: 100%;
 }
 
 .container {
@@ -109,9 +109,14 @@
   );
 }
 
+.asterisk {
+  flex-shrink: 0;
+}
+
 .subtitleWrapper {
   display: flex;
   white-space: nowrap;
+  gap: 10px;
   will-change: transform;
 }
 
@@ -175,28 +180,90 @@
   min-width: 150px;
 }
 
-/* 반응형 */
 @media (max-width: 1024px) {
   .topSection {
     grid-template-columns: 1fr 1fr;
+    gap: 40px;
   }
+
   .ctaColumn {
     grid-column: span 2;
-    align-items: flex-start;
-    margin-top: 40px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding-top: 40px;
+    border-top: 1px solid #eee;
   }
 }
 
 @media (max-width: 768px) {
+  .footer {
+    padding-top: 60px;
+  }
+
+  .container {
+    padding: 0 30px;
+  }
+
   .topSection {
     grid-template-columns: 1fr;
+    gap: 40px;
+    margin-bottom: 60px;
   }
-  .bottomContainer {
+
+  .brandColumn {
+    text-align: left;
+  }
+
+  .logo {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  .navColumn {
+    width: 100%;
+  }
+
+  .navColumn li {
+    width: 90%;
+    min-width: unset;
+  }
+
+  .ctaColumn {
+    grid-column: span 1;
     flex-direction: column;
-    gap: 20px;
+    align-items: flex-start;
+    gap: 30px;
+    border-top: none;
+    padding-top: 0;
+  }
+
+  .subtitleMask {
+    width: 20%;
+    justify-content: flex-start;
+  }
+
+  .buyBtn {
+    width: 20%;
+    padding: 16px 0;
     text-align: center;
   }
-  .legalLinks a {
-    margin: 0 10px;
+
+  .bottomBar {
+    border-radius: 40px 40px 0 0;
+    padding: 30px 0;
+  }
+
+  .bottomContainer {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+    padding: 0 24px;
+  }
+
+  .copyright {
+    font-size: 0.75rem;
+    line-height: 1.5;
   }
 }

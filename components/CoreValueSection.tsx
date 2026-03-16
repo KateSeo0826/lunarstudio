@@ -1,6 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
+import { useTranslations } from "next-intl";
 import styles from "./CoreValueSection.module.css";
 
 const moveDown = {
@@ -34,13 +36,31 @@ const textGradientReveal = {
     ease: "easeInOut" as const,
   },
 };
+
 export default function CoreValueSection() {
+  const t = useTranslations("coreValue");
+
+  const renderHighlightText = (text: string) => {
+    const parts = text.split(/(\[\[.*?\]\])/g);
+    return parts.map((part, index) => {
+      if (part.startsWith("[[") && part.endsWith("]]")) {
+        const content = part.replace(/[\[\]]/g, "");
+        return (
+          <span key={index} className={styles.purpleHighlight}>
+            {content}
+          </span>
+        );
+      }
+      return part;
+    });
+  };
+
   return (
     <section className={styles.section}>
       <div className={styles.container}>
         <div className={styles.header}>
           <motion.span {...moveDown} className={styles.subTag}>
-            Lunar Studio Core Value
+            {t("subTag")}
           </motion.span>
           <motion.div {...lineDraw} className={styles.line} />
         </div>
@@ -51,13 +71,9 @@ export default function CoreValueSection() {
             transition={{ delay: 1.5 }}
             className={styles.sloganText}
           >
-            <p className={styles.fullRow}>한 번 봄으로</p>
+            <p className={styles.fullRow}>{t("slogan.row1")}</p>
+            <p className={styles.fullRow}>{t("slogan.row2")}</p>
 
-            <p className={styles.fullRow}>
-              그 브랜드의 특별한 경험을 간직하기 때문입니다.
-            </p>
-
-            {/* 3줄: 핵심 가치 (보라색 물듦) */}
             <div className={styles.inlineRow}>
               <motion.span
                 variants={textGradientReveal}
@@ -66,7 +82,7 @@ export default function CoreValueSection() {
                 viewport={{ once: true }}
                 className={styles.colorChangeText}
               >
-                이어지고,
+                {t("slogan.gradient.text1")}
               </motion.span>
               <motion.span
                 variants={textGradientReveal}
@@ -76,7 +92,7 @@ export default function CoreValueSection() {
                 className={styles.colorChangeText}
                 transition={{ ...textGradientReveal.transition, delay: 3.8 }}
               >
-                남겨지며,
+                {t("slogan.gradient.text2")}
               </motion.span>
               <motion.span
                 variants={textGradientReveal}
@@ -86,14 +102,11 @@ export default function CoreValueSection() {
                 className={styles.colorChangeText}
                 transition={{ ...textGradientReveal.transition, delay: 4.6 }}
               >
-                잊지 않도록
+                {t("slogan.gradient.text3")}
               </motion.span>
             </div>
 
-            {/* 4줄 */}
-            <p className={styles.fullRow}>
-              사람들에게 당신의 순간을 기억나게 만들겠습니다.
-            </p>
+            <p className={styles.fullRow}>{t("slogan.row4")}</p>
           </motion.div>
         </div>
 
@@ -103,7 +116,15 @@ export default function CoreValueSection() {
             transition={{ delay: 2.0 }}
             className={styles.symbolWrapper}
           >
-            <div className={styles.starSymbol}>✦</div>
+            <div className={styles.starSymbol}>
+              <Image
+                src="/images/star.svg"
+                width={150}
+                height={150}
+                alt="star"
+                className={styles.starIcon}
+              />
+            </div>
           </motion.div>
 
           <motion.div
@@ -111,13 +132,26 @@ export default function CoreValueSection() {
             transition={{ delay: 2.2 }}
             className={styles.descriptionWrapper}
           >
-            <p className={styles.descContent}>
-              소비자들의 경험이 이어지고 남겨지며 잊지 않도록
-              <br />
-              핵심 가치를 설정하고 이를 바탕으로 브랜드 이미지를 설계합니다.
+            <p
+              className={styles.descContent}
+              style={{ whiteSpace: "pre-line" }}
+            >
+              {renderHighlightText(t("description.p1"))}
+            </p>
+            <p
+              className={styles.descContent}
+              style={{ whiteSpace: "pre-line" }}
+            >
+              {renderHighlightText(t("description.p2"))}
+            </p>
+            <p
+              className={styles.descContent}
+              style={{ whiteSpace: "pre-line" }}
+            >
+              {renderHighlightText(t("description.p3"))}
             </p>
             <p className={styles.descFooter}>
-              당신의 모든 순간에 함께하는{" "}
+              {t("description.footer")}{" "}
               <span className={styles.purpleHighlight}>Lunar Studio</span>
             </p>
           </motion.div>

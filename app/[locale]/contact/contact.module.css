@@ -108,3 +108,121 @@
 .submitBtn:hover {
   transform: scale(1.02);
 }
+
+.successView {
+  text-align: center;
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.successTitle {
+  font-size: 32px;
+  font-weight: 800;
+  color: var(--white);
+  margin: 0;
+}
+
+.successText {
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--gray);
+  margin-bottom: 20px;
+}
+
+.resetBtn {
+  padding: 10px 20px;
+  background: none;
+  border: 1px var(--gray) solid;
+  border-radius: 50px;
+  color: var(--white);
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.errorMsg {
+  color: #ff4d4d;
+  font-size: 13px;
+  margin-top: 12px;
+  text-align: center;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    padding: 60px 16px; /* 양쪽 padding 줄임 */
+  }
+
+  .bgText {
+    font-size: clamp(4rem, 12vw, 10rem); /* 배경 텍스트 축소 */
+  }
+
+  .formCard {
+    padding: 30px;
+    max-width: 400px; /* 카드 폭 줄임 */
+  }
+
+  .star {
+    font-size: 1.3rem;
+  }
+
+  .formDescription {
+    font-size: 0.8rem;
+    margin-bottom: 20px;
+  }
+
+  .label {
+    font-size: 0.7rem;
+  }
+
+  .input,
+  .textarea {
+    padding: 10px 14px;
+  }
+
+  .submitBtn {
+    padding: 14px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 40px 12px; /* 모바일 여백 더 줄임 */
+  }
+
+  .bgText {
+    font-size: clamp(3rem, 10vw, 8rem); /* 모바일에서 더 작게 */
+  }
+
+  .formCard {
+    padding: 24px;
+    max-width: 100%; /* 모바일 폭 꽉 채우기 */
+    border-radius: 16px;
+  }
+
+  .star {
+    font-size: 1.2rem;
+  }
+
+  .formDescription {
+    font-size: 0.7rem;
+    margin-bottom: 16px;
+  }
+
+  .label {
+    font-size: 0.65rem;
+  }
+
+  .input,
+  .textarea {
+    padding: 8px 12px;
+  }
+
+  .submitBtn {
+    padding: 12px;
+    font-size: 0.85rem;
+  }
+}

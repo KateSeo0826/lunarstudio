@@ -1,10 +1,11 @@
 "use client";
 
-import Image from "next/image";
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 import styles from "./about.module.css";
 import CoreValueSection from "../../../components/CoreValueSection";
+import ScrollSection from "@/components/ScrollSection";
 
 export default function AboutSection() {
   const t = useTranslations("about");
@@ -62,6 +63,7 @@ export default function AboutSection() {
             <motion.h1 {...moveDown} className={styles.mainTitle}>
               Your Story <br /> & Our Studio
             </motion.h1>
+            <div></div>
             <motion.div
               {...moveDown}
               transition={{ ...moveDown.transition, delay: 0.5 }}
@@ -136,6 +138,7 @@ export default function AboutSection() {
         </div>
       </div>
       <CoreValueSection />
+      <ScrollSection />
     </section>
   );
 }

@@ -5,24 +5,6 @@
     "learnLink": "우리에 대해 알아보기",
     "subheader": "다국어 LunarStudio 웹사이트입니다. next-intl을 사용합니다."
   },
-  "about": {
-    "subTag": "브랜드 전략과 웹 제작을 함께하는 파트너",
-    "sloganLine1": "루나르 스튜디오는",
-    "sloganPoint1": "광고대행사의 전략적 기획력",
-    "sloganConnector": "과",
-    "sloganPoint2": "프로덕션의 강력한 실행력",
-    "sloganLine2Part1": "을 결합한",
-    "sloganLine2Part2": "크리에이티브 에이전시입니다.",
-    "descTitle": "영상 중심의 콘텐츠 마케팅 에이전시",
-    "descLine1": "단순히 멋진 영상을 만드는 것을 넘어,",
-    "descLine2": "브랜드의 메시지를 명확하게 전달하고",
-    "descHighlight1": "성과로 이어지는 콘텐츠를 완성하는 것",
-    "descLine3": "한화생명, 아모레퍼시픽, 롯데시네마 등",
-    "descLine4": "굴지의 대기업과 함께하며 쌓아온 경험을 바탕으로",
-    "descHighlight2": "효율적인 마케팅 메시지",
-    "descHighlight3": "강렬한 셀링포인트",
-    "descFinal": "99%의 치밀한 전략에 1%의 감각을 더해, 브랜드가 기억되고 사랑받는 결과물을 만들어내겠습니다."
-  },
   "navbar": {
     "home": "홈",
     "about": "회사소개",
@@ -39,7 +21,34 @@
     "ourStory": "브랜드 스토리",
     "contactUs": "문의하기"
   },
-
+  "about": {
+    "subTag": "브랜드 전략과 웹 제작을 함께하는 파트너",
+    "sloganLine1": "루나르 스튜디오는",
+    "sloganPoint1": "전략적인 기획과 탄탄한 실행력",
+    "sloganConnector": "을 바탕으로",
+    "sloganPoint2": "브랜드의 방향을 설계하고",
+    "sloganLine2Part1": "웹사이트로 완성하는",
+    "sloganLine2Part2": "크리에이티브 스튜디오입니다"
+  },
+  "coreValue": {
+    "subTag": "Lunar Studio Core Value",
+    "slogan": {
+      "row1": "한 번 봄으로",
+      "row2": "그 브랜드의 특별한 경험을 간직하기 때문입니다.",
+      "gradient": {
+        "text1": "이어지고,",
+        "text2": "남겨지며,",
+        "text3": "잊지 않도록"
+      },
+      "row4": "사람들에게 당신의 순간을 기억나게 만들겠습니다."
+    },
+    "description": {
+      "p1": "브랜드 이야기를 완성하는 루나르 스튜디오,\n단순히 디자인이나 웹사이트를 만드는 것을 넘어,\n고객의 [[문제와 이상적인 모습]]을 이해하고\n브랜드에 꼭 맞는 [[전략과 감성]]으로 완성하는 것이 우리의 목표입니다.",
+      "p2": "루나르 스튜디오는 경험 대신 [[세심한 분석]]과 [[고객 맞춤 접근]]으로\n브랜드가 진정으로 전달하고 싶은 메시지를 선명하게 보여주고,\n고객과 소통하며 사랑받는 결과물을 만들어갑니다.",
+      "p3": "99%의 [[전략적 설계]]에 1%의 [[감각]]을 더해,\n브랜드가 오래 기억되고, 사용자가 만족하는 경험을 만들어내겠습니다.",
+      "footer": "당신의 모든 순간에 함께하는"
+    }
+  },
   "projects": {
     "ourPortfolio": "우리의 포트폴리오",
     "titlePart1": "Selected",
