@@ -154,7 +154,7 @@
     "services": {
       "branding": {
         "title": "브랜딩",
-        "image": "https://cdn.prod.website-files.com/692e410b4406ea2cf410f589/6986fbf4ece7ff793d251422_pic3.webp",
+        "image": "/images/services_01.jpg",
         "tags": [
           "Brand Identity",
           "Naming",
@@ -165,7 +165,7 @@
       },
       "design": {
         "title": "디자인",
-        "image": "https://cdn.prod.website-files.com/692e410b4406ea2cf410f589/6986fbf4fdd0e2c6bcb40546_pic2.webp",
+        "image": "/images/services_04.jpg",
         "tags": [
           "UI/UX",
           "Web Design",
@@ -177,7 +177,7 @@
       },
       "development": {
         "title": "개발",
-        "image": "https://cdn.prod.website-files.com/692e410b4406ea2cf410f589/6986fbf48bef78c279177f0c_pic1.webp",
+        "image": "/images/services_04.webp",
         "tags": [
           "Web Development",
           "Webflow",
@@ -188,7 +188,7 @@
       },
       "content": {
         "title": "콘텐츠",
-        "image": "https://cdn.prod.website-files.com/692e410b4406ea2cf410f589/6986fbf4774ed7ceb77c06f2_pic4.webp",
+        "image": "/images/services_05.webp",
         "tags": [
           "Copywriting",
           "Storytelling",
@@ -199,7 +199,7 @@
       },
       "marketing": {
         "title": "마케팅",
-        "image": "https://cdn.prod.website-files.com/692e410b4406ea2cf410f589/6986fc59d2fc284c294488a5_pic5.webp",
+        "image": "/images/services_03.jpg",
         "tags": [
           "Digital Strategy",
           "SEO",
