@@ -56,7 +56,7 @@
     "services": {
       "branding": {
         "title": "Branding",
-        "image": "https://cdn.prod.website-files.com/692e410b4406ea2cf410f589/6986fbf4ece7ff793d251422_pic3.webp",
+        "image": "/images/services_01.jpg",
         "tags": [
           "Brand Identity",
           "Naming",
@@ -67,7 +67,7 @@
       },
       "design": {
         "title": "Design",
-        "image": "https://cdn.prod.website-files.com/692e410b4406ea2cf410f589/6986fbf4fdd0e2c6bcb40546_pic2.webp",
+        "image": "/images/services_04.jpg",
         "tags": [
           "UI/UX",
           "Web Design",
@@ -79,7 +79,7 @@
       },
       "development": {
         "title": "Development",
-        "image": "https://cdn.prod.website-files.com/692e410b4406ea2cf410f589/6986fbf48bef78c279177f0c_pic1.webp",
+        "image": "/images/services_04.webp",
         "tags": [
           "Web Development",
           "Webflow",
@@ -90,7 +90,7 @@
       },
       "content": {
         "title": "Content",
-        "image": "https://cdn.prod.website-files.com/692e410b4406ea2cf410f589/6986fbf4774ed7ceb77c06f2_pic4.webp",
+        "image": "/images/services_05.webp",
         "tags": [
           "Copywriting",
           "Storytelling",
@@ -101,7 +101,7 @@
       },
       "marketing": {
         "title": "Marketing",
-        "image": "https://cdn.prod.website-files.com/692e410b4406ea2cf410f589/6986fc59d2fc284c294488a5_pic5.webp",
+        "image": "/images/services_03.jpg",
         "tags": [
           "Digital Strategy",
           "SEO",
@@ -121,10 +121,11 @@
     "items": {
       "niji": {
         "name": "Niji",
-        "category": "Design",
+        "category": "Restaurant & Branding",
         "description": "Niji is a website project created for a Japanese sushi restaurant. The design and user experience were carefully refined to provide a unique online experience.",
         "client": "Niji Sushi",
         "services": ["Web Design", "Frontend Development", "Brand Strategy"],
+        "platform": "WordPress",
         "url": "https://nijisushirestaurant.com/",
         "details": {
           "problem": "The original site was hosted on PythonAnywhere with outdated technologies and unnecessary database dependencies, making updates and maintenance cumbersome.",
@@ -137,17 +138,66 @@
           "solution": "The redesigned website is now clean, accessible, and easy to maintain, with a modern interface that enhances user experience and streamlines content management."
         }
       },
-      "mobile": {
-        "name": "Mobile",
-        "category": "Identity"
+      "seraphine": {
+        "name": "Seraphine Preschool",
+        "category": "Education & Branding",
+        "description": "Seraphine Preschool is a website project for an early childhood education center. The project focused on redefining the user experience and aligning the overall design with the brand identity.",
+        "client": "Seraphine Preschool",
+        "services": ["Web Design", "UX/UI Design", "Rebranding"],
+        "platform": "Imweb",
+        "url": "https://www.seraphine.co.kr/",
+        "details": {
+          "problem": "The client initially requested minor edits to a self-built website. However, from a UX/UI perspective, the structure and design lacked clarity, consistency, and did not effectively reflect the brand identity.",
+          "approach": [
+            "Re-evaluated the entire website structure from a UX/UI perspective",
+            "Redesigned the layout to better align with the preschool’s brand identity",
+            "Improved information hierarchy for parents to easily understand key content",
+            "Enhanced overall usability and navigation flow",
+            "Refined visual elements for a more warm and trustworthy impression"
+          ],
+          "solution": "The website was fully redesigned to deliver a clear, cohesive, and user-friendly experience. It now effectively communicates the brand’s values while making it easy for parents to explore information and take action."
+        }
       },
-      "reality": {
-        "name": "Reality",
-        "category": "Strategy"
+      "playingmore": {
+        "name": "Playingmore",
+        "category": "E-commerce",
+        "description": "Playingmore is an e-commerce website project for a lifestyle and pet-related brand. The project focused on creating a warm, engaging brand experience while improving overall usability and visual consistency.",
+        "client": "Playingmore",
+        "platform": "Imweb",
+        "services": ["Web Design", "UX/UI Design", "Frontend Development"],
+        "url": "https://www.playingmore.co.kr/",
+        "details": {
+          "problem": "The existing website lacked a cohesive brand identity and had inconsistencies in layout and visual structure. This made it difficult to deliver a clear brand message and reduced overall user engagement.",
+          "approach": [
+            "Refined the overall website structure to create a more intuitive user flow",
+
+            "Redesigned key pages to better reflect the brand’s emotional and lifestyle-driven identity",
+            "Improved visual consistency across typography, color, and layout",
+            "Enhanced product presentation to increase engagement and clarity",
+            "Optimized the site for a smoother browsing experience across devices"
+          ],
+          "solution": "The redesigned website now delivers a cohesive and emotionally engaging brand experience. With improved usability and a refined visual system, users can easily explore products while naturally connecting with the brand’s identity."
+        }
       },
-      "ecology": {
-        "name": "Ecology",
-        "category": "Rebranding"
+      "timebeau": {
+        "name": "TimeBeau Clinic",
+        "category": "Beauty & Clinic",
+        "description": "TimeBeau Clinic is a multilingual website project for a beauty clinic. The project focused on delivering a refined brand experience while ensuring accessibility for a global audience.",
+        "client": "TimeBeau Clinic",
+        "services": ["Web Design", "UX/UI Design", "Frontend Development"],
+        "url": "https://timebeau-global.co.kr/",
+        "platform": "Imweb",
+        "details": {
+          "problem": "The clinic required a website that could effectively communicate its brand identity to both local and international audiences. However, the absence of a structured multilingual system and cohesive design made it difficult to deliver a consistent user experience.",
+          "approach": [
+            "Designed and implemented a multilingual website structure for global accessibility",
+            "Aligned the overall design with the clinic’s premium and trustworthy brand identity",
+            "Structured content to ensure clarity across different languages",
+            "Optimized user flow for consultation and booking inquiries",
+            "Maintained visual consistency across all language versions"
+          ],
+          "solution": "The final website delivers a cohesive and premium brand experience across multiple languages. It allows users from different regions to easily access information and engage with the clinic, while maintaining a consistent and polished interface."
+        }
       }
     }
   },

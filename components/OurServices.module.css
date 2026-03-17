@@ -1,22 +1,19 @@
 .section {
-  background-color: #0e0e0e;
+  background-color:var(--black);
+  padding: clamp(15px, 10vw, 30px) 0;
   color: var(--white);
-  padding: clamp(30px, 10vw, 60px) 0;
   border-radius: 1.25rem;
 }
 
 .container {
-  background-color: #000;
+  max-width: 1280px;
+  background-color:var(--black);
   color: var(--white);
-  padding: 60px 0;
+  margin: 0 auto clamp(2rem, 5vw, 4.5rem);
+  padding: 0 clamp(2rem, 5vw, 2.5rem);
   position: relative;
   overflow: hidden;
   cursor: none;
-}
-
-.inner {
-  max-width: 1200px;
-  margin: 0 auto;
 }
 
 .headingWrap {
@@ -150,7 +147,7 @@
 
 .imageFollower {
   width: 300px;
-  height: 400px;
+  height: 300px;
   border-radius: 16px;
   overflow: hidden;
   box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);

@@ -1,5 +1,5 @@
 .mainContainer {
-  background-color: #f8f8f8;
+  background-color: var(--white);
   display: flex;
   flex-direction: column;
   padding: 0 !important;
@@ -9,14 +9,14 @@
 }
 
 .heroSectionWrapper {
-  background-color: #121212;
+  background-color:var(--black);
   margin: 4px;
   border-radius: 32px;
   width: calc(100% - 8px);
 }
 
 .introSectionWrapper {
-  background-color: #f8f8f8;
+  background-color: var(--white);
   padding: 100px 20px;
   width: 100%;
 }

@@ -3,21 +3,26 @@
   padding: clamp(100px, 10vw, 120px) 0;
   overflow: hidden;
 }
+
 .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px 40px;
+  max-width: 1280px;
+  margin: 0 auto clamp(2rem, 5vw, 4.5rem);
+  padding: 0 clamp(2rem, 5vw, 2.5rem);
 }
+
 .headerTop {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   align-items: flex-end;
   gap: 35px;
 }
+
 .subTag {
-  padding-left: 10px;
+  font-size: 1rem;
+  font-weight: 700;
+  padding-left: 41px;
   white-space: nowrap;
-  color: var(--purple);
+  color: var(--black);
 }
 
 .mainTitle {
@@ -27,16 +32,20 @@
   line-height: 1.05;
   letter-spacing: -2px;
 }
+
 .dividerWrapper {
   width: 100%;
   height: 2px;
-  background: rgba(0, 0, 0, 0.05);
   margin-top: 20px;
+  background-color: rgba(0, 0, 0, 0.05);
+  overflow: hidden;
 }
+
 .dividerLine {
   height: 100%;
   background: var(--black);
 }
+
 .sloganText {
   display: flex;
   flex-direction: column;
@@ -44,33 +53,19 @@
   font-size: clamp(1.8rem, 4vw, 3.2rem);
   font-weight: 800;
 }
+
 .inlineRow {
   display: flex;
   flex-direction: row;
   align-items: baseline;
   gap: 10px;
 }
+
 .inlineRow p {
   color: var(--black);
   margin: 0;
 }
-.subTag {
-  font-size: 1rem;
-  font-weight: 700;
-  color: var(--black);
-  max-width: 300px;
-  text-align: right;
-}
-.dividerWrapper {
-  width: 100%;
-  height: 2px;
-  background-color: rgba(0, 0, 0, 0.05);
-  overflow: hidden;
-}
-.dividerLine {
-  height: 100%;
-  background-color: var(--black);
-}
+
 .imageWrapper {
   width: 100%;
   aspect-ratio: 16 / 9;
@@ -83,15 +78,18 @@
   height: 100%;
   object-fit: cover;
 }
+
 .sloganArea {
   margin-bottom: 50px;
   letter-spacing: 0.7;
 }
+
 .sloganText {
   font-size: clamp(1.75rem, 4vw, 2.75rem);
   font-weight: 800;
   line-height: 1.2;
 }
+
 .highlightText {
   background: linear-gradient(90deg, var(--purple) 100%, var(--black) 100%);
   background-repeat: no-repeat;
@@ -101,34 +99,41 @@
   color: var(--black);
   -webkit-text-fill-color: transparent;
 }
+
 .bottomGrid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 100px;
 }
+
 .starSymbol {
   width: 180px;
   height: 180px;
 }
+
 .descTitle {
   font-size: 1.4rem;
   font-weight: 800;
   margin-bottom: 30px;
 }
+
 .descContent {
   font-size: 1.1rem;
   line-height: 1.8;
   color: var(--darkgray);
 }
+
 .purpleText {
   color: var(--purple);
   font-weight: 700;
 }
+
 .descFooter {
   font-size: 1.1rem;
   font-weight: 800;
   margin-top: 40px;
 }
+
 .colorChangeText {
   display: inline-block;
   background: linear-gradient(to right, var(--purple) 50%, var(--black) 50%);

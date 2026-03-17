@@ -61,3 +61,18 @@
   text-transform: uppercase;
   letter-spacing: 0.25em;
 }
+
+@media (max-width: 768px) {
+  .headerContainer {
+    padding: 1.5rem 0;
+  }
+
+  .socialLink {
+    display: none;
+  }
+
+  .marqueeContainer {
+    grid-column: 1 / -1;
+    height: 24px;
+  }
+}

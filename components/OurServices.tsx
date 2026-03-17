@@ -38,14 +38,14 @@ export default function OurServices() {
   const serviceKeys = Object.keys(servicesData);
 
   return (
-    <main className={styles.container}>
+    <section className={styles.section}>
       <motion.div
         className={styles.cursor}
         style={{ x: springX, y: springY }}
         animate={{ scale: hoveredKey ? 3.5 : 1 }}
       />
 
-      <div className={styles.inner}>
+      <div className={styles.container}>
         <div className={styles.headerArea}>
           <div className={styles.headingWrap}>
             <h2 className={styles.heading}>
@@ -125,6 +125,6 @@ export default function OurServices() {
           })}
         </div>
       </div>
-    </main>
+    </section>
   );
 }

@@ -1,15 +1,17 @@
 :root {
   --background: #f8f8f8;
   --foreground: #0e0e0e;
-  --black: #0e0e0e;
+  --black: #121212;
   --card-bg: #111111;
   --purple: #4c5ef1;
   --purple-bg: #e6e6ff;
   --yellow: #e2f157;
   --white: #fff;
+  --white-text: #e0e0e0;
   --green: #bcffb0;
   --gray: #888;
   --darkgray: #444;
+  --text-gray: #8d8d8d;
 }
 
 h1,

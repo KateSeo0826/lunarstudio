@@ -1,12 +1,13 @@
 .section {
   background-color: #f8f8f8;
-  padding: clamp(30px, 10vw, 60px) 0;
+  padding: clamp(20px, 10vw, 40px) 0;
   border-radius: 1.25rem;
 }
 
 .container {
-  max-width: 1200px;
-  margin: 0 auto;
+  max-width: 1280px;
+  margin: 0 auto clamp(2rem, 5vw, 4.5rem);
+  padding: 0 clamp(2rem, 5vw, 2.5rem);
 }
 
 .topGrid {
@@ -28,6 +29,7 @@
   line-height: 0.9;
   text-transform: uppercase;
 }
+
 .headingWrap {
   position: relative;
   display: inline-block;
@@ -40,7 +42,7 @@
   font-weight: 700;
   line-height: 0.9;
   letter-spacing: -0.04em;
-  color: #000;
+  color: var(--black);
   z-index: 1;
 }
 
@@ -77,12 +79,13 @@
     top: -10px;
   }
 }
+
 .highlight {
   color: #888;
 }
 
 .mainButton {
-  background: #121212;
+  background: var(--black);
   color: #fafafa;
   border: none;
   padding: 12px 24px;
@@ -212,48 +215,48 @@
   font-size: 24px;
 }
 
-/* 태블릿 구간 (Tablet) */
+
+/* 미디어 쿼리 부분 수정 */
+
+/* 태블릿 (1024px 이하) */
 @media (max-width: 1024px) {
   .heading {
-    font-size: 4rem;
+    font-size: 3.5rem; 
   }
 
   .card {
-    flex: 0 0 calc(50% - 10px);
-    min-width: calc(50% - 10px);
+    
+    flex: 0 0 calc(45% - 10px); 
+    min-width: calc(45% - 10px);
   }
 }
 
+
 @media (max-width: 768px) {
   .section {
-    padding: 60px 0;
-  }
-
-  .topGrid {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 24px;
-  }
-
-  .marqueeContainer {
-    width: 180px;
+    padding: 40px 0;
   }
 
   .heading {
-    font-size: 2.8rem;
+    font-size: 2.2rem; 
   }
 
   .card {
-    flex: 0 0 100%;
-    min-width: 100%;
+    flex: 0 0 85%;
+    min-width: 85%;
   }
 
   .cardInner {
-    padding: 30px;
+    padding: 24px; 
     min-height: auto;
+  }
+
+  .track {
+    gap: 15px; 
   }
 
   .controls {
     justify-content: center;
+    margin-top: 30px;
   }
 }

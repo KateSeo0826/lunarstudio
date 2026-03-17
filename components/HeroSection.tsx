@@ -35,6 +35,31 @@ export default function HeroSection() {
           { y: 0, opacity: 1, duration: 0.7 },
           "-=0.35",
         );
+
+        const colorTl = gsap.timeline({
+        repeat: -1, 
+        delay: 1.0 
+       });
+
+    colorTl
+      .to(`.${styles.title}`, {
+        color: "#fff8e1",
+        textShadow: "0 0 15px rgba(255, 248, 225, 0.4)",
+        duration: 4,
+        ease: "sine.inOut",
+      })
+      .to(`.${styles.title}`, {
+        color: "#ffecb3", 
+        textShadow: "0 0 20px rgba(255, 236, 179, 0.5)",
+        duration: 4,
+        ease: "sine.inOut",
+      })
+      .to(`.${styles.title}`, {
+        color: "#f5f5f5", 
+        textShadow: "0 0 10px rgba(245, 245, 245, 0.2)",
+        duration: 4,
+        ease: "sine.inOut",
+      });
     }, rootRef);
 
     return () => ctx.revert();

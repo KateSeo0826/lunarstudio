@@ -28,6 +28,7 @@ export default function ProjectSection({
 
   return (
     <section ref={containerRef} className={sectionClass}>
+      
       <div className={styles.container}>
         <div className={styles.topGrid}>
           <motion.div
@@ -127,7 +128,7 @@ function ProjectCard({ project, index, t }: any) {
               src={project.image}
               className={styles.img}
               alt="project"
-              width={600}
+              width={500}
               height={500}
             />
             <motion.div
