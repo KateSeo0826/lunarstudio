@@ -102,7 +102,7 @@ export default function Footer() {
           </nav>
 
           <div className={styles.ctaColumn}>
-            <div className={styles.subtitleMask}>
+            <div className={styles.maskBox}>
               <Image
                 width={16}
                 height={16}
@@ -110,20 +110,22 @@ export default function Footer() {
                 alt="asterisk"
                 className={styles.asterisk}
               />
-              <motion.div
-                className={styles.subtitleWrapper}
-                animate={{ x: ["0%", "-50%"] }}
-                transition={{
-                  duration: 12,
-                  repeat: Infinity,
-                  ease: "linear",
-                }}
-              >
-                <span className={styles.subtitle}>DRIVEN BY DESIGN-</span>
-                <span className={styles.subtitle}>DRIVEN BY DESIGN-</span>
-                <span className={styles.subtitle}>DRIVEN BY DESIGN-</span>
-                <span className={styles.subtitle}>DRIVEN BY DESIGN</span>
-              </motion.div>
+              <div className={styles.subtitleMask}>
+                <motion.div
+                  className={styles.subtitleWrapper}
+                  animate={{ x: ["0%", "-50%"] }}
+                  transition={{
+                    duration: 12,
+                    repeat: Infinity,
+                    ease: "linear",
+                  }}
+                >
+                  <span className={styles.subtitle}>DRIVEN BY DESIGN-</span>
+                  <span className={styles.subtitle}>DRIVEN BY DESIGN-</span>
+                  <span className={styles.subtitle}>DRIVEN BY DESIGN-</span>
+                  <span className={styles.subtitle}>DRIVEN BY DESIGN</span>
+                </motion.div>
+              </div>
             </div>
             <button className={styles.buyBtn}>Get In Touch ✦</button>
           </div>
