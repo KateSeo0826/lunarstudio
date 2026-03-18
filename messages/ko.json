@@ -222,35 +222,35 @@
         "desc": "온라인 가시성과 참여도에서 즉각적인 결과를 얻었습니다. 그들의 전략은 효과적이고 데이터 중심적이며 우리의 니즈에 맞게 조정되었습니다.",
         "author": "김**",
         "rate": "4.9",
-        "img": "/images/client-01.jpg"
+        "img": "/images/client-01.png"
       },
       "2": {
         "title": "Innovative Solutions...",
         "desc": "그들은 우리 브랜드가 앞서 나갈 수 있도록 신선한 아이디어와 혁신적인 솔루션을 지속적으로 제공합니다. 우리 비즈니스의 진정한 자산입니다.",
         "author": "임**",
         "rate": "5.0",
-        "img": "/images/client-02.jpg"
+        "img": "/images/client-02.png"
       },
       "3": {
         "title": "Professional Team",
         "desc": "모든 단계에서 전문성을 보여주었습니다. 결과물은 기대 이상이었고 소통 또한 매우 원활했습니다.",
         "author": "송**",
         "rate": "5.0",
-        "img": "/images/client-01.jpg"
+        "img": "/images/client-01.png"
       },
       "4": {
         "title": "Creative Excellence",
         "desc": "디자인 퀄리티가 환상적입니다. 우리 브랜드의 가치를 시각적으로 완벽하게 풀어냈습니다.",
         "author": "이**",
         "rate": "4.8",
-        "img": "/images/client-02.jpg"
+        "img": "/images/client-02.png"
       },
       "5": {
         "title": "Strategic Growth",
         "desc": "단순한 디자인을 넘어 비즈니스의 성장을 고민하는 파트너입니다. 강력히 추천합니다.",
         "author": "서**",
         "rate": "5.0",
-        "img": "/images/client-01.jpg"
+        "img": "/images/client-01.png"
       }
     }
   },
