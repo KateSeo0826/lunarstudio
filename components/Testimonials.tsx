@@ -9,16 +9,23 @@ import styles from "./Testimonials.module.css";
 export default function Testimonials() {
   const t = useTranslations("testimonials");
   const [index, setIndex] = useState(0);
-
   const items = ["1", "2", "3", "4", "5"];
 
   const nextStep = () => setIndex((prev) => (prev + 1) % items.length);
   const prevStep = () =>
     setIndex((prev) => (prev - 1 + items.length) % items.length);
 
+  // 터치 스와이프 로직
+  const onDragEnd = (event, info) => {
+    const swipeThreshold = 50;
+    if (info.offset.x < -swipeThreshold) nextStep();
+    else if (info.offset.x > swipeThreshold) prevStep();
+  };
+
   return (
     <section className={styles.section}>
       <div className={styles.container}>
+        {/* 상단 레이아웃 (기존 유지) */}
         <div className={styles.topGrid}>
           <div className={styles.titleArea}>
             <div className={styles.headingWrap}>
@@ -32,7 +39,6 @@ export default function Testimonials() {
               </h2>
             </div>
           </div>
-
           <div className={styles.headerRight}>
             <button className={styles.mainButton}>
               <span>{t("cta")}</span>
@@ -45,17 +51,19 @@ export default function Testimonials() {
           </div>
         </div>
 
+        {/* 슬라이더 영역 (수정됨) */}
         <div className={styles.sliderWrapper}>
           <motion.div
             className={styles.track}
+            drag="x" // 터치 활성화
+            dragConstraints={{ left: 0, right: 0 }}
+            onDragEnd={onDragEnd}
             animate={{
-              x: `calc(-${
-                index *
-                (100 /
-                  (typeof window !== "undefined" && window.innerWidth < 768
-                    ? 1
-                    : 3))
-              }%)`,
+              // 모바일: 인덱스 * (카드너비 85% + gap 90px)
+              x:
+                typeof window !== "undefined" && window.innerWidth < 768
+                  ? `calc(-${index} * (85% + 90px))`
+                  : `calc(-${index} * (30% + 20px))`,
             }}
             transition={{ type: "spring", stiffness: 200, damping: 25 }}
           >
@@ -103,6 +111,7 @@ export default function Testimonials() {
           </motion.div>
         </div>
 
+        {/* 컨트롤러 (기존 유지) */}
         <div className={styles.controls}>
           <button onClick={prevStep} className={styles.arrowBtn}>
             ←

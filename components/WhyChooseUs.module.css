@@ -163,10 +163,10 @@
 }
 
 .mainButton {
-  background: #121212;
-  color: #fafafa;
+  background: var(--black);
+  color: var(--white);
   border: none;
-  padding: 12px 24px;
+  padding: 1rem 1.75rem;
   border-radius: 100px;
   display: flex;
   align-items: center;
@@ -182,21 +182,26 @@
 
 @media (max-width: 1024px) {
   .mainGrid {
-    grid-template-columns: 1fr; /* 탭/모바일에서 1열 배치 */
+    grid-template-columns: 1fr;
   }
 }
 
 @media (max-width: 768px) {
   .topGrid {
     flex-direction: column;
-    align-items: flex-start; /* 세로 정렬 */
+    align-items: flex-start;
+  }
+
+  .mainButton {
+    padding: 0.85rem 1.25rem;
+    font-size: 0.8rem;
   }
 }
 
 @media (max-width: 480px) {
   .statHeader {
     flex-direction: column;
-    align-items: flex-start; /* 아주 작은 화면에선 세로로 */
+    align-items: flex-start;
     gap: 10px;
   }
 }

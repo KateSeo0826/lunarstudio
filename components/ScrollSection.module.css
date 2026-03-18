@@ -39,11 +39,22 @@
 .mainButton {
   display: inline-flex;
   align-items: center;
-  padding: 1rem 3rem;
+  padding: 1rem 1.75rem;
   background-color: var(--white);
   border-radius: 100px;
   color: var(--black);
   text-decoration: none;
   font-weight: 700;
   font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+  .container {
+    height: 60vh;
+  }
+
+  .mainButton {
+    padding: 0.85rem 1.25rem;
+    font-size: 0.8rem;
+  }
 }

@@ -72,7 +72,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 0;
+  padding: 1.25rem 0;
   background: none;
   border: none;
   cursor: pointer;
@@ -169,10 +169,10 @@
 }
 
 .askBtn {
-  background: #121212;
-  color: #fafafa;
+  background: var(--black);
+  color: var(--white);
   border: none;
-  padding: 12px 24px;
+  padding: 1rem 1.75rem;
   border-radius: 100px;
   display: flex;
   align-items: center;
@@ -209,5 +209,10 @@
     height: 30px;
     left: -15px;
     top: -10px;
+  }
+
+  .askBtn {
+    padding: 0.85rem 1.25rem;
+    font-size: 0.8rem;
   }
 }

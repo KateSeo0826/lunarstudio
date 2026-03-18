@@ -95,7 +95,7 @@
 .buttonGroup {
   display: flex;
   align-items: center;
-  gap: clamp(1rem, 4vw, 1.2rem);
+  gap: clamp(0.5rem, 4vw, 1rem);
   flex-wrap: wrap;
 }
 
@@ -117,6 +117,7 @@
   background-color: var(--purple);
   color: var(--white);
 }
+
 .contactLink {
   display: inline-flex;
   align-items: center;
@@ -150,6 +151,12 @@
   }
 
   .buttonGroup {
-    gap: 2rem;
+    gap: 1rem;
+  }
+
+  .ourStoryBtn,
+  .contactLink {
+    padding: 0.85rem 1.25rem;
+    font-size: 0.8rem;
   }
 }

@@ -155,7 +155,7 @@
 .buyBtn {
   background: var(--black);
   color: var(--white);
-  padding: 14px 32px;
+  padding: 1rem 1.75rem;
   border-radius: 50px;
   font-weight: 700;
   border: none;
@@ -236,5 +236,10 @@
     flex-direction: column;
     gap: 15px;
     text-align: center;
+  }
+
+  .buyBtn {
+    padding: 0.85rem 1.25rem;
+    font-size: 0.8rem;
   }
 }

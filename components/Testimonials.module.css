@@ -2,6 +2,7 @@
   background-color: #f8f8f8;
   padding: clamp(20px, 10vw, 40px) 0;
   border-radius: 1.25rem;
+  overflow: hidden; /* 슬라이더 넘침 방지 필수 */
 }
 
 .container {
@@ -21,13 +22,6 @@
 .titleArea {
   display: flex;
   flex-direction: column;
-}
-
-.heading {
-  font-size: 5rem;
-  font-weight: 700;
-  line-height: 0.9;
-  text-transform: uppercase;
 }
 
 .headingWrap {
@@ -70,16 +64,6 @@
   }
 }
 
-/* 모바일 화면 조정 */
-@media (max-width: 768px) {
-  .dot {
-    width: 30px;
-    height: 30px;
-    left: -15px;
-    top: -10px;
-  }
-}
-
 .highlight {
   color: #888;
 }
@@ -102,8 +86,9 @@
   width: 18px;
   height: 18px;
 }
+
 .sliderWrapper {
-  overflow: hidden;
+  overflow: visible; /* 드래그 중인 카드가 보일 수 있게 */
   margin: 0 -10px;
 }
 
@@ -111,26 +96,34 @@
   display: flex;
   align-items: stretch;
   gap: 20px;
-  padding: 20px 10px;
+  padding: 20px 0;
+  touch-action: pan-y; /* 모바일 터치 스크롤 최적화 */
+  user-select: none;
 }
 
 .card {
   display: flex;
   flex-direction: column;
-  flex: 0 0 30%;
+  flex: 0 0 30%; /* PC 기준 */
+  min-width: 30%;
   padding: 5px;
-  border: 1px solid #e6e6e6;
+  border: 1px solid #e6e6e6; /* 기존 테두리 유지 */
   border-radius: 1.25rem;
+  box-sizing: border-box;
 }
 
 .cardInner {
   display: flex;
   flex-direction: column;
   flex: 1;
-  background: #e6e6e6;
+  background: #e6e6e6; /* 기존 배경색 유지 */
   border-radius: 1.25rem;
   border: 1px solid #e6e6e6;
-  padding: 2rem;
+  padding: 2.5rem 2rem;
+}
+
+.card img {
+  pointer-events: none; /* 이미지 드래그 방지 */
 }
 
 .quoteIcon {
@@ -139,11 +132,6 @@
   filter: invert(41%) sepia(82%) saturate(2692%) hue-rotate(218deg)
     brightness(97%) contrast(98%);
   transition: filter 0.3s ease;
-}
-
-.cardInner:hover .quoteIcon {
-  filter: invert(88%) sepia(31%) saturate(808%) hue-rotate(18deg)
-    brightness(105%) contrast(92%);
 }
 
 .cardTitle {
@@ -156,7 +144,7 @@
   font-size: 1.05rem;
   line-height: 1.6;
   color: #444;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
   flex-grow: 1;
   display: flex;
   align-items: flex-start;
@@ -166,8 +154,8 @@
   display: flex;
   align-items: center;
   gap: 16px;
-  padding-top: 10px;
-  border-top: 1px solid #eee;
+  padding-top: 15px;
+  border-top: 1px solid #ccc;
   margin-top: auto;
 }
 
@@ -213,50 +201,49 @@
   justify-content: center;
   cursor: pointer;
   font-size: 24px;
+  transition: background 0.2s;
 }
 
-
-/* 미디어 쿼리 부분 수정 */
-
-/* 태블릿 (1024px 이하) */
-@media (max-width: 1024px) {
-  .heading {
-    font-size: 3.5rem; 
-  }
-
-  .card {
-    
-    flex: 0 0 calc(45% - 10px); 
-    min-width: calc(45% - 10px);
-  }
+.arrowBtn:hover {
+  background: #ddd;
 }
-
 
 @media (max-width: 768px) {
   .section {
     padding: 40px 0;
   }
-
   .heading {
-    font-size: 2.2rem; 
+    font-size: 2.2rem;
+  }
+  .dot {
+    width: 30px;
+    height: 30px;
+    left: -15px;
+    top: -10px;
+  }
+
+  .track {
+    gap: 90px; /* 기존에 설정하신 90px 간격 */
   }
 
   .card {
-    flex: 0 0 85%;
+    flex: 0 0 85%; /* 모바일에서 카드 너비 85% 고정 */
     min-width: 85%;
   }
 
   .cardInner {
-    padding: 24px; 
-    min-height: auto;
+    padding: 1.5rem 1rem;
   }
 
-  .track {
-    gap: 15px; 
+  .arrowBtn {
+    width: 44px;
+    height: 44px;
   }
+}
 
-  .controls {
-    justify-content: center;
-    margin-top: 30px;
+@media (max-width: 1024px) and (min-width: 769px) {
+  .card {
+    flex: 0 0 calc(48% - 15px);
+    min-width: calc(48% - 15px);
   }
 }
