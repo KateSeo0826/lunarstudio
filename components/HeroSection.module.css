@@ -32,7 +32,6 @@
   letter-spacing: 0.02em;
   color: rgba(255, 255, 255, 0.95);
   text-transform: uppercase;
-  
 }
 
 .subtitle {
@@ -42,8 +41,9 @@
   color: rgba(255, 255, 255, 0.58);
 }
 
-@media (max-width: 640px) {
+@media (max-width: 768px) {
   .hero {
+    min-height: 60vh;
     padding: 42px 16px 34px;
   }
 }

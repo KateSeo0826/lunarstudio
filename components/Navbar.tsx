@@ -221,7 +221,9 @@ export default function Navbar() {
               </Link>
             </li>
           </ul>
-
+          <div className={styles.panelLocale}>
+            <LocaleSwitcher />
+          </div>
           <div className={styles.panelFooter}>
             <Link
               href="/contact"
@@ -231,9 +233,6 @@ export default function Navbar() {
               <span>Get In Touch</span>
               <span className={styles.ctaStar}>✦</span>
             </Link>
-            <div className={styles.panelLocale}>
-              <LocaleSwitcher />
-            </div>
           </div>
         </div>
       </aside>

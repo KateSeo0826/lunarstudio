@@ -40,3 +40,25 @@
 .locale select:focus {
   outline: none;
 }
+
+@media (max-width: 1024px) {
+  .locale {
+    background: rgba(0, 0, 0, 0.95);
+    border: 2px solid #e2f157;
+  }
+
+  .locale select {
+    color: var(--white);
+  }
+
+  .locale:hover {
+    background: rgba(0, 0, 0, 0.1);
+  }
+}
+
+.locale select::-ms-expand {
+  display: none;
+}
+.locale select:focus {
+  outline: none;
+}
