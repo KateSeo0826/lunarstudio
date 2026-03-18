@@ -256,7 +256,7 @@
   }
 
   .menuLabel {
-    font-size: clamp(1.5rem, 9vw, 2rem);
+    font-size: clamp(1rem, 9vw, 1.5rem);
     font-weight: 900;
     line-height: 0.85;
     letter-spacing: -1.5px;
