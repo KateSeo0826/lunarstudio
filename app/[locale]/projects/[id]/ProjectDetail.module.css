@@ -10,7 +10,7 @@
   justify-content: space-between;
   gap: 10px;
   margin: 0 auto clamp(1rem, 5vw, 2rem);
-  padding: 0 clamp(2rem, 5vw, 2.5rem);
+  padding: 0 clamp(1.9rem, 5vw, 2.5rem);
 }
 .projectLeft {
   display: flex;
