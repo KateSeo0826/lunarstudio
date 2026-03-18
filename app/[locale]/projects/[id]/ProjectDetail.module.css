@@ -232,6 +232,53 @@
 @media (max-width: 1024px) {
   .container {
     flex-direction: column;
-    padding: 60px;
+    gap: 40px;
+  }
+
+  .projectLeft,
+  .projectRight {
+    flex: none;
+    width: 100%;
+    padding: 0 !important;
+  }
+
+  .projectLeft h1 {
+    font-size: 3rem;
+    line-height: 1.2;
+    padding: 0;
+  }
+
+  .projectRight {
+    aspect-ratio: 1 / 1.1;
+  }
+
+  .deviceToggle {
+    width: 50%;
+  }
+
+  .pc {
+    width: 95%;
+    height: 70%;
+  }
+
+  .mobile {
+    width: 260px;
+    height: 70%;
+  }
+}
+
+@media (max-width: 480px) {
+  .deviceToggle button {
+    flex: 1;
+    padding: 12px 0;
+    font-size: 0.9rem;
+  }
+
+  .metaValueWrap {
+    gap: 10px;
+  }
+
+  .metaValue {
+    font-size: 1rem;
   }
 }
