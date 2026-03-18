@@ -13,46 +13,13 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  margin-bottom: 60px;
+  margin-bottom: clamp(3rem, 5vw, 3.75rem);
   gap: 20px;
 }
 
 .titleArea {
   display: flex;
   flex-direction: column;
-}
-
-.marqueeRow {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  margin-bottom: 16px;
-}
-
-.star {
-  width: 16px;
-  height: 16px;
-}
-
-.marqueeContainer {
-  overflow: hidden;
-  white-space: nowrap;
-  width: 50%;
-  mask-image: linear-gradient(
-    to right,
-    transparent,
-    black 10%,
-    black 90%,
-    transparent
-  );
-}
-
-.marquee {
-  display: flex;
-  gap: 10px;
-  font-size: 14px;
-  text-transform: uppercase;
-  color: #888;
 }
 
 .heading {
@@ -143,6 +110,7 @@
   z-index: -1;
   animation: floatAndScale 4s infinite ease-in-out;
 }
+
 @keyframes floatAndScale {
   0% {
     transform: translate(0, 0) scale(0.8);
@@ -159,20 +127,13 @@
   color: var(--gray);
 }
 
-@media (max-width: 768px) {
-  .dot {
-    width: 30px;
-    height: 30px;
-    left: -15px;
-    top: -10px;
-  }
-}
-
 .qText {
+  text-align: left;
   font-size: 1.2rem;
   font-weight: 600;
-  color: #222;
+  color: var(--black);
 }
+
 .qNo {
   font-size: 0.8rem;
   color: #bbb;
@@ -200,6 +161,7 @@
 .footerCta {
   margin-top: 50px;
 }
+
 .ctaLabel {
   font-size: 0.85rem;
   color: #999;
@@ -226,5 +188,26 @@
   }
   .content {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .topGrid {
+    gap: 5px;
+  }
+
+  .qText {
+    font-size: 0.9rem;
+  }
+
+  .image {
+    height: 320px;
+  }
+
+  .dot {
+    width: 30px;
+    height: 30px;
+    left: -15px;
+    top: -10px;
   }
 }

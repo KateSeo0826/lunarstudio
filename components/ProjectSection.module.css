@@ -95,7 +95,7 @@
 .projectList {
   display: flex;
   flex-wrap: wrap;
-  gap: 40px 2%;
+  gap: 40px;
   align-items: flex-start;
 }
 
@@ -283,6 +283,11 @@
     left: -15px;
     top: -10px;
   }
+
+  .arrow {
+    width: 2rem;
+    height: 2rem;
+  }
 }
 
 @media (max-width: 850px) {
@@ -291,6 +296,5 @@
   }
   .cardWrapper {
     width: 100%;
-    margin-bottom: 20vh;
   }
 }

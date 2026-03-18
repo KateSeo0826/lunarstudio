@@ -197,6 +197,9 @@
     padding-top: 40px;
     margin-top: 20px;
   }
+  .maskBox {
+    justify-content: flex-start;
+  }
 }
 
 @media (max-width: 768px) {

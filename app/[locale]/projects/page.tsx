@@ -9,8 +9,8 @@ export default function ProjectPage() {
     <>
       <main className={styles.container}>
         <ProjectSection isWhite={true} />
+        <ScrollSection />
       </main>
-      <ScrollSection />
     </>
   );
 }
