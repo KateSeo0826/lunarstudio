@@ -54,7 +54,7 @@ export default function Navbar() {
   const moreItems = useMemo(
     () => [
       { href: "/projects", label: t("projects"), no: "03" },
-      { href: "/services", label: t("services"), no: "04" },
+      { href: "/service", label: t("services"), no: "04" },
       { href: "/blog", label: t("blog"), no: "05" },
     ],
     [t],

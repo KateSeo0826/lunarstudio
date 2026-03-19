@@ -183,8 +183,8 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 100px;
-  height: 100px;
+  width: 220px;
+  height: 220px;
   perspective: 1000px;
   pointer-events: none;
   overflow: visible;
@@ -286,13 +286,18 @@
   }
 
   .arrow {
-    width: 2rem;
-    height: 2rem;
+    width: 1.85rem;
+    height: 1.85rem;
   }
 
   .allProjectsBtn {
     padding: 0.85rem 1.25rem;
     font-size: 0.8rem;
+  }
+
+  .logoContainer {
+    width: 140px;
+    height: 140px;
   }
 }
 

@@ -7,7 +7,7 @@ import styles from "./about.module.css";
 import CoreValueSection from "../../../components/CoreValueSection";
 import ScrollSection from "@/components/ScrollSection";
 
-export default function AboutSection() {
+export default function AboutPage() {
   const t = useTranslations("about");
 
   const moveDown = {
