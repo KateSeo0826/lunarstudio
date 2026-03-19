@@ -153,12 +153,16 @@
   background: none;
   border: 1px var(--gray) solid;
   border-radius: 50px;
-  padding: 10px 20px;
-  text-decoration: underline;
+  padding: 1rem 1.75rem;
   color: var(--white);
-  font-weight: 600;
+  font-weight: 500;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 1rem;
+}
+
+.resetBtn:hover {
+  background-color: var(--yellow);
+  color: var(--black);
 }
 
 .errorMsg {

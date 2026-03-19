@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import styles from "./contact.module.css";
 import QuickHelp from "../../../components/QuickHelp";
+import ScrollSection from "@/components/ScrollSection";
 
 export default function ContactPage() {
   const [status, setStatus] = useState("");
@@ -151,6 +152,7 @@ export default function ContactPage() {
         </motion.div>
       </main>
       <QuickHelp />
+      <ScrollSection />
     </>
   );
 }
