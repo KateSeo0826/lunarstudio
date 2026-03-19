@@ -71,68 +71,84 @@ export default function ContactPage() {
         </div>
 
         <motion.div
-  className={styles.formCard}
-  initial={{ opacity: 0, y: 30 }}
-  animate={{ opacity: 1, y: 0 }}
-  transition={{ delay: 0.5 }}
->
-  <span className={styles.star}>✻</span>
-  
-  {status === "SUCCESS" ? (
-    /* ✅ 성공 시 보여줄 뷰 */
-    <motion.div 
-      className={styles.successView}
-      initial={{ opacity: 0, scale: 0.9 }}
-      animate={{ opacity: 1, scale: 1 }}
-    >
-      <h2 className={styles.successTitle}>Thank You!</h2>
-      <p className={styles.successText}>
-        Your message has been sent successfully.<br />
-        We'll get back to you as soon as possible.
-      </p>
-      <button 
-        onClick={() => setStatus("IDLE")} 
-        className={styles.resetBtn}
-      >
-        Send another message
-      </button>
-    </motion.div>
-  ) : (
-    /* 📝 기존 폼 뷰 */
-    <>
-      <p className={styles.formDescription}>
-        Let’s bring your brand vision to life.
-      </p>
-
-      <form onSubmit={handleSubmit}>
-        <div className={styles.inputGroup}>
-          <label className={styles.label}>Name</label>
-          <input type="text" name="name" className={styles.input} required />
-        </div>
-        <div className={styles.inputGroup}>
-          <label className={styles.label}>Email Address</label>
-          <input type="email" name="email" className={styles.input} required />
-        </div>
-        <div className={styles.inputGroup}>
-          <label className={styles.label}>Message</label>
-          <textarea name="message" className={styles.textarea} rows={4} required />
-        </div>
-
-        <button 
-          type="submit" 
-          className={styles.submitBtn}
-          disabled={status === "SENDING"}
+          className={styles.formCard}
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.5 }}
         >
-          {status === "SENDING" ? "SENDING..." : "SEND MESSAGE"}
-        </button>
-        
-        {status === "ERROR" && (
-          <p className={styles.errorMsg}>Something went wrong. Please try again.</p>
-        )}
-      </form>
-    </>
-  )}
-</motion.div>
+          <span className={styles.star}>✻</span>
+
+          {status === "SUCCESS" ? (
+            <motion.div
+              className={styles.successView}
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+            >
+              <h2 className={styles.successTitle}>Thank You!</h2>
+              <p className={styles.successText}>
+                Your message has been sent successfully.
+                <br />
+                We'll get back to you as soon as possible.
+              </p>
+              <button
+                onClick={() => setStatus("IDLE")}
+                className={styles.resetBtn}
+              >
+                Send another message
+              </button>
+            </motion.div>
+          ) : (
+            <>
+              <p className={styles.formDescription}>
+                Let’s bring your brand vision to life.
+              </p>
+
+              <form onSubmit={handleSubmit}>
+                <div className={styles.inputGroup}>
+                  <label className={styles.label}>Name</label>
+                  <input
+                    type="text"
+                    name="name"
+                    className={styles.input}
+                    required
+                  />
+                </div>
+                <div className={styles.inputGroup}>
+                  <label className={styles.label}>Email Address</label>
+                  <input
+                    type="email"
+                    name="email"
+                    className={styles.input}
+                    required
+                  />
+                </div>
+                <div className={styles.inputGroup}>
+                  <label className={styles.label}>Message</label>
+                  <textarea
+                    name="message"
+                    className={styles.textarea}
+                    rows={4}
+                    required
+                  />
+                </div>
+
+                <button
+                  type="submit"
+                  className={styles.submitBtn}
+                  disabled={status === "SENDING"}
+                >
+                  {status === "SENDING" ? "SENDING..." : "SEND MESSAGE"}
+                </button>
+
+                {status === "ERROR" && (
+                  <p className={styles.errorMsg}>
+                    Something went wrong. Please try again.
+                  </p>
+                )}
+              </form>
+            </>
+          )}
+        </motion.div>
       </main>
       <QuickHelp />
     </>

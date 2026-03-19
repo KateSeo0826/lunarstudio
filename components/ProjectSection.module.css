@@ -290,6 +290,11 @@
     height: 1.85rem;
   }
 
+  .btnIcon {
+    width: 18px;
+    height: 18px;
+  }
+
   .allProjectsBtn {
     padding: 0.85rem 1.25rem;
     font-size: 0.8rem;

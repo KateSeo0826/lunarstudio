@@ -28,7 +28,6 @@ export default function ProjectSection({
 
   return (
     <section ref={containerRef} className={sectionClass}>
-      
       <div className={styles.container}>
         <div className={styles.topGrid}>
           <motion.div
