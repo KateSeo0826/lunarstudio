@@ -124,8 +124,8 @@
         "category": "Restaurant & Branding",
         "description": "Niji is a website project created for a Japanese sushi restaurant. The design and user experience were carefully refined to provide a unique online experience.",
         "client": "Niji Sushi",
-        "services": ["Web Design", "Frontend Development", "Brand Strategy"],
-        "stack": ["WordPress", "JavaScript", "CSS"],
+        "services": ["#Web Design", "#Frontend Development", "#Brand Strategy"],
+        "stack": ["#WordPress", "#JavaScript", "#CSS"],
         "url": "https://nijisushirestaurant.com/",
         "details": {
           "problem": "The original site was hosted on PythonAnywhere with outdated technologies and unnecessary database dependencies, making updates and maintenance cumbersome.",
@@ -143,8 +143,8 @@
         "category": "Education & Branding",
         "description": "Seraphine Preschool is a website project for an early childhood education center. The project focused on redefining the user experience and aligning the overall design with the brand identity.",
         "client": "Seraphine Preschool",
-        "services": ["Web Design", "UX/UI Design", "Rebranding"],
-        "platform": "Imweb",
+        "services": ["#Web Design", "#UX/UI Design", "#Rebranding"],
+        "stack": ["#Imweb", "#JavaScript", "#CSS"],
         "url": "https://www.seraphine.co.kr/",
         "details": {
           "problem": "The client initially requested minor edits to a self-built website. However, from a UX/UI perspective, the structure and design lacked clarity, consistency, and did not effectively reflect the brand identity.",
@@ -163,8 +163,8 @@
         "category": "E-commerce",
         "description": "Playingmore is an e-commerce website project for a lifestyle and pet-related brand. The project focused on creating a warm, engaging brand experience while improving overall usability and visual consistency.",
         "client": "Playingmore",
-        "stack": ["Imweb", "JavaScript", "CSS"],
-        "services": ["Web Design", "UX/UI Design", "Frontend Development"],
+        "stack": ["#Imweb", "#JavaScript", "#CSS"],
+        "services": ["#Web Design", "#UX/UI Design", "#Frontend Development"],
         "url": "https://www.playingmore.co.kr/",
         "details": {
           "problem": "The existing website lacked a cohesive brand identity and had inconsistencies in layout and visual structure. This made it difficult to deliver a clear brand message and reduced overall user engagement.",
@@ -183,9 +183,9 @@
         "category": "Beauty & Clinic",
         "description": "TimeBeau Clinic is a multilingual website project for a beauty clinic. The project focused on delivering a refined brand experience while ensuring accessibility for a global audience.",
         "client": "TimeBeau Clinic",
-        "services": ["Web Design", "UX/UI Design", "Frontend Development"],
+        "services": ["#Web Design", "#UX/UI Design", "#Frontend Development"],
         "url": "https://timebeau-global.co.kr/",
-        "stack": ["Imweb", "JavaScript", "CSS"],
+        "stack": ["#Imweb", "#JavaScript", "#CSS"],
         "details": {
           "problem": "The clinic required a website that could effectively communicate its brand identity to both local and international audiences. However, the absence of a structured multilingual system and cohesive design made it difficult to deliver a consistent user experience.",
           "approach": [

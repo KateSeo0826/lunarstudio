@@ -157,7 +157,7 @@
 }
 
 .metaItem {
-  margin-bottom: 15px;
+  margin-bottom: 1.25rem;
 }
 
 .metaLabel {
@@ -188,6 +188,18 @@
   border: 1.5px solid #1a1a1a;
   border-radius: 50%;
   margin-right: 10px;
+}
+
+.stackValue {
+  font-size: 0.85rem;
+  font-weight: 500;
+  padding: 4px 12px;
+  border: 1px solid var(--purple);
+  border-radius: 100px;
+  white-space: nowrap;
+  background: transparent;
+  color: var(--black);
+  transition: all 0.3s ease;
 }
 
 .caseStudy {
@@ -264,6 +276,10 @@
   .mobile {
     width: 260px;
     height: 70%;
+  }
+
+  .metaItem {
+    margin-bottom: 1rem;
   }
 }
 

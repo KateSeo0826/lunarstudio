@@ -57,19 +57,17 @@ export default function ProjectDetail({ params }: ProjectDetailProps) {
               <span className={styles.metaLabel}>Services:</span>
               <div className={styles.metaValueWrap}>
                 {services.map((service: string, index: number) => (
-                  <div key={index} className={styles.metaValue}>
-                    <span className={styles.metaDot}></span>
+                  <div key={index} className={styles.stackValue}>
                     {service}
                   </div>
                 ))}
               </div>
             </div>
             <div className={styles.metaItem}>
-              <span className={styles.metaLabel}>Stack:</span>
+              <span className={styles.metaLabel}>Technology:</span>
               <div className={styles.metaValueWrap}>
                 {stacks.map((stack: string, index: number) => (
-                  <div key={index} className={styles.metaValue}>
-                    <span className={styles.metaDot}></span>
+                  <div key={index} className={styles.stackValue}>
                     {stack}
                   </div>
                 ))}
