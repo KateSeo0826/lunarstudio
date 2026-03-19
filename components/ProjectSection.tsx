@@ -94,83 +94,87 @@ function ProjectCard({ project, index, t }: any) {
         zIndex: index,
       }}
     >
-      <div className={styles.cardContent}>
-        <div className={styles.cardHeader}>
-          <div className={styles.info}>
-            <span className={styles.name}>{t(`items.${project.id}.name`)}</span>
-            <span className={styles.sep}>—</span>
-            <span className={styles.cat}>
-              {t(`items.${project.id}.category`)}
-            </span>
-          </div>
-          <a href={project.link} className={styles.arrow}>
-            <svg
-              width="12"
-              height="12"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="3"
-            >
-              <path d="M7 17L17 7M17 7H7M17 7V17" />
-            </svg>
-          </a>
-        </div>
-        <motion.div
-          className={styles.cardContent}
-          initial="rest"
-          whileHover="hover"
-          animate="rest"
-        >
-          <div className={styles.imgBox}>
-            <Image
-              src={project.image}
-              className={styles.img}
-              alt="project"
-              width={500}
-              height={500}
-            />
-            <motion.div
-              className={styles.overlay}
-              variants={{
-                rest: { opacity: 0 },
-                hover: { opacity: 0.35 },
-              }}
-              transition={{ duration: 0.3 }}
-            />
-            <div className={styles.logoContainer}>
-              <motion.div
-                className={styles.logoItem}
-                variants={{
-                  rest: { y: 0, opacity: 1, rotateX: 0 },
-                  hover: { y: -40, opacity: 0, rotateX: -90 },
-                }}
-                transition={{ duration: 0.4, ease: "easeInOut" }}
-              >
-                <Image
-                  src={project.logo}
-                  className={styles.logo}
-                  alt="logo"
-                  width={50}
-                  height={50}
-                />
-              </motion.div>
-
-              <motion.div
-                className={styles.logoItem}
-                style={{ position: "absolute", top: 0 }}
-                variants={{
-                  rest: { y: 40, opacity: 0, rotateX: 90 },
-                  hover: { y: 0, opacity: 1, rotateX: 0 },
-                }}
-                transition={{ duration: 0.4, ease: "easeInOut" }}
-              >
-                <img src={project.logo} className={styles.logo} alt="logo" />
-              </motion.div>
+      <Link href={project.link}>
+        <div className={styles.cardContent}>
+          <div className={styles.cardHeader}>
+            <div className={styles.info}>
+              <span className={styles.name}>
+                {t(`items.${project.id}.name`)}
+              </span>
+              <span className={styles.sep}>—</span>
+              <span className={styles.cat}>
+                {t(`items.${project.id}.category`)}
+              </span>
             </div>
+            <a href={project.link} className={styles.arrow}>
+              <svg
+                width="12"
+                height="12"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="3"
+              >
+                <path d="M7 17L17 7M17 7H7M17 7V17" />
+              </svg>
+            </a>
           </div>
-        </motion.div>
-      </div>
+          <motion.div
+            className={styles.cardContent}
+            initial="rest"
+            whileHover="hover"
+            animate="rest"
+          >
+            <div className={styles.imgBox}>
+              <Image
+                src={project.image}
+                className={styles.img}
+                alt="project"
+                width={500}
+                height={500}
+              />
+              <motion.div
+                className={styles.overlay}
+                variants={{
+                  rest: { opacity: 0 },
+                  hover: { opacity: 0.35 },
+                }}
+                transition={{ duration: 0.3 }}
+              />
+              <div className={styles.logoContainer}>
+                <motion.div
+                  className={styles.logoItem}
+                  variants={{
+                    rest: { y: 0, opacity: 1, rotateX: 0 },
+                    hover: { y: -40, opacity: 0, rotateX: -90 },
+                  }}
+                  transition={{ duration: 0.4, ease: "easeInOut" }}
+                >
+                  <Image
+                    src={project.logo}
+                    className={styles.logo}
+                    alt="logo"
+                    width={50}
+                    height={50}
+                  />
+                </motion.div>
+
+                <motion.div
+                  className={styles.logoItem}
+                  style={{ position: "absolute", top: 0 }}
+                  variants={{
+                    rest: { y: 40, opacity: 0, rotateX: 90 },
+                    hover: { y: 0, opacity: 1, rotateX: 0 },
+                  }}
+                  transition={{ duration: 0.4, ease: "easeInOut" }}
+                >
+                  <img src={project.logo} className={styles.logo} alt="logo" />
+                </motion.div>
+              </div>
+            </div>
+          </motion.div>
+        </div>
+      </Link>
     </div>
   );
 }

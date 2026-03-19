@@ -54,7 +54,7 @@ export default function QuickHelp() {
                   }
                 >
                   <span className={styles.qText}>
-                    <small className={styles.qNo}>(0{key})</small> /{" "}
+                    <small className={styles.qNo}>(0{key})</small>{" "}
                     {t(`items.q${key}`)}
                   </span>
                   <span

@@ -51,15 +51,13 @@ export default function Testimonials() {
           </div>
         </div>
 
-        {/* 슬라이더 영역 (수정됨) */}
         <div className={styles.sliderWrapper}>
           <motion.div
             className={styles.track}
-            drag="x" // 터치 활성화
+            drag="x"
             dragConstraints={{ left: 0, right: 0 }}
             onDragEnd={onDragEnd}
             animate={{
-              // 모바일: 인덱스 * (카드너비 85% + gap 90px)
               x:
                 typeof window !== "undefined" && window.innerWidth < 768
                   ? `calc(-${index} * (85% + 90px))`
@@ -74,7 +72,7 @@ export default function Testimonials() {
                     <Image
                       width={44}
                       height={44}
-                      src="/images/quote-icon.svg"
+                      src="/images/quotes.svg"
                       className={styles.quoteIcon}
                       alt=""
                     />
@@ -84,7 +82,7 @@ export default function Testimonials() {
                   </div>
                   <p className={styles.cardText}>{t(`items.${id}.desc`)}</p>
                   <div className={styles.clientInfo}>
-                    <div className={styles.avatarWrap}>
+                    {/* <div className={styles.avatarWrap}>
                       <Image
                         width={52}
                         height={52}
@@ -92,7 +90,7 @@ export default function Testimonials() {
                         alt=""
                         className={styles.avatar}
                       />
-                    </div>
+                    </div> */}
                     <div className={styles.clientDetails}>
                       <div className={styles.clientName}>
                         {t(`items.${id}.author`)}

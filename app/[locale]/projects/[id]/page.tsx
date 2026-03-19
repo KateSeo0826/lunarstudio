@@ -14,6 +14,7 @@ export default function ProjectDetail({ params }: ProjectDetailProps) {
 
   const projectUrl = t(`items.${id}.url`);
   const services = t.raw(`items.${id}.services`) || [];
+  const stacks = t.raw(`items.${id}.stack`) || [];
   const approach = t.raw(`items.${id}.details.approach`) || [];
 
   return (
@@ -59,6 +60,17 @@ export default function ProjectDetail({ params }: ProjectDetailProps) {
                   <div key={index} className={styles.metaValue}>
                     <span className={styles.metaDot}></span>
                     {service}
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div className={styles.metaItem}>
+              <span className={styles.metaLabel}>Stack:</span>
+              <div className={styles.metaValueWrap}>
+                {stacks.map((stack: string, index: number) => (
+                  <div key={index} className={styles.metaValue}>
+                    <span className={styles.metaDot}></span>
+                    {stack}
                   </div>
                 ))}
               </div>

@@ -125,7 +125,7 @@
         "description": "Niji is a website project created for a Japanese sushi restaurant. The design and user experience were carefully refined to provide a unique online experience.",
         "client": "Niji Sushi",
         "services": ["Web Design", "Frontend Development", "Brand Strategy"],
-        "platform": "WordPress",
+        "stack": ["WordPress", "JavaScript", "CSS"],
         "url": "https://nijisushirestaurant.com/",
         "details": {
           "problem": "The original site was hosted on PythonAnywhere with outdated technologies and unnecessary database dependencies, making updates and maintenance cumbersome.",
@@ -163,14 +163,13 @@
         "category": "E-commerce",
         "description": "Playingmore is an e-commerce website project for a lifestyle and pet-related brand. The project focused on creating a warm, engaging brand experience while improving overall usability and visual consistency.",
         "client": "Playingmore",
-        "platform": "Imweb",
+        "stack": ["Imweb", "JavaScript", "CSS"],
         "services": ["Web Design", "UX/UI Design", "Frontend Development"],
         "url": "https://www.playingmore.co.kr/",
         "details": {
           "problem": "The existing website lacked a cohesive brand identity and had inconsistencies in layout and visual structure. This made it difficult to deliver a clear brand message and reduced overall user engagement.",
           "approach": [
             "Refined the overall website structure to create a more intuitive user flow",
-
             "Redesigned key pages to better reflect the brand’s emotional and lifestyle-driven identity",
             "Improved visual consistency across typography, color, and layout",
             "Enhanced product presentation to increase engagement and clarity",
@@ -186,7 +185,7 @@
         "client": "TimeBeau Clinic",
         "services": ["Web Design", "UX/UI Design", "Frontend Development"],
         "url": "https://timebeau-global.co.kr/",
-        "platform": "Imweb",
+        "stack": ["Imweb", "JavaScript", "CSS"],
         "details": {
           "problem": "The clinic required a website that could effectively communicate its brand identity to both local and international audiences. However, the absence of a structured multilingual system and cohesive design made it difficult to deliver a consistent user experience.",
           "approach": [
@@ -208,7 +207,7 @@
     "titlePart2": "Choose Us",
     "cta": "Get in touch",
     "stat1Title": "Successful Projects\nCompleted",
-    "stat1Desc": "For over a decade, we’ve been shaping digital experiences and building strong brands.",
+    "stat1Desc": "For over tow years, we’ve been shaping digital experiences and building strong brands.",
     "stat1DescHighlight": "Our years of knowledge ensure every project is backed by skill, strategy, and creativity.",
     "stat2Title": "Customer\nSatisfaction Rate",
     "stat2Desc": "We measure success by the impact we create. With a near-perfect satisfaction rate,",
