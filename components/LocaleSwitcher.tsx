@@ -18,14 +18,30 @@ export default function LocaleSwitcher() {
 
   return (
     <div className={styles.locale}>
-      <select
+      {/* <select
         className={styles.localeSelect}
         value={locale}
         onChange={(e) => switchLocale(e.target.value)}
       >
         <option value="en">EN</option>
         <option value="ko">KO</option>
-      </select>
+      </select> */}
+
+      <button
+        className={`${styles.lang} ${locale === "en" ? styles.active : ""}`}
+        onClick={() => switchLocale("en")}
+      >
+        EN
+      </button>
+
+      <span className={styles.divider}>|</span>
+
+      <button
+        className={`${styles.lang} ${locale === "ko" ? styles.active : ""}`}
+        onClick={() => switchLocale("ko")}
+      >
+        KO
+      </button>
     </div>
   );
 }
