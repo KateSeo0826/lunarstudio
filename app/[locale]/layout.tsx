@@ -47,6 +47,8 @@ export default async function RootLayout({
           name="google-site-verification"
           content="Yzr9M-zbO617FBym5Y-F0u8tm_X7BKs-YerMiIhzig0"
         />
+        <link rel="alternate" href="https://lunar-studio.ca/ko" hreflang="ko" />
+        <link rel="alternate" href="https://lunar-studio.ca/en" hreflang="en" />
       </head>
       <body className={pretendard.className}>
         <NextIntlClientProvider locale={locale}>
