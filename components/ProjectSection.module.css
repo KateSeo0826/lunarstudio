@@ -225,12 +225,11 @@
   letter-spacing: 0.05em;
   cursor: pointer;
   border: 1px solid var(--white);
-  transition: all 0.3s ease;
 }
 
 .btnIcon {
-  width: 14px;
-  height: 14px;
+  width: 18px;
+  height: 18px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -257,24 +256,21 @@
 }
 
 .link {
-  color: #000;
+  color: var(--black);
   text-decoration: none;
   font-weight: 500;
-  transition: color 0.3s ease;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3); /* 살짝 밑줄 추가 시 */
 }
 
 .link:hover {
-  color: #cccccc;
+  color: var(--white) !important;
 }
 
 .whiteBackground .link {
   color: #fafafa;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 .whiteBackground .link:hover {
-  color: #666;
+  color: var(--black) !important;
 }
 
 @media (max-width: 768px) {
@@ -291,8 +287,8 @@
   }
 
   .btnIcon {
-    width: 18px;
-    height: 18px;
+    width: 14px;
+    height: 14px;
   }
 
   .allProjectsBtn {

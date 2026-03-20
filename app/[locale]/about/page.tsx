@@ -91,7 +91,7 @@ export default function AboutPage() {
           className={styles.imageWrapper}
         >
           <Image
-            src="/images/meeting.png"
+            src="/images/office.jpg"
             alt="Team"
             width={1200}
             height={600}
