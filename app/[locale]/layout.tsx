@@ -8,6 +8,7 @@ import Footer from "../../components/Footer";
 import { routing } from "../../i18n/routing";
 import Script from "next/script";
 import "./globals.css";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 const pretendard = localFont({
   src: "../../public/fonts/PretendardVariable.woff2",

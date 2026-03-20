@@ -23,8 +23,8 @@ export default function LocaleSwitcher() {
         value={locale}
         onChange={(e) => switchLocale(e.target.value)}
       >
-        <option value="ko">KO</option>
         <option value="en">EN</option>
+        <option value="ko">KO</option>
       </select>
     </div>
   );

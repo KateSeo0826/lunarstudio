@@ -106,7 +106,7 @@ function ProjectCard({ project, index, t }: any) {
                 {t(`items.${project.id}.category`)}
               </span>
             </div>
-            <Link href={project.link} className={styles.arrow}>
+            <div className={styles.arrow}>
               <svg
                 width="12"
                 height="12"
@@ -117,7 +117,7 @@ function ProjectCard({ project, index, t }: any) {
               >
                 <path d="M7 17L17 7M17 7H7M17 7V17" />
               </svg>
-            </Link>
+            </div>
           </div>
           <motion.div
             className={styles.cardContent}
