@@ -6,6 +6,7 @@ import { setRequestLocale } from "next-intl/server";
 import Navar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 import { routing } from "../../i18n/routing";
+import Script from "next/script";
 import "./globals.css";
 
 const pretendard = localFont({
@@ -49,6 +50,19 @@ export default async function RootLayout({
         />
         <link rel="alternate" href="https://lunar-studio.ca/ko" hrefLang="ko" />
         <link rel="alternate" href="https://lunar-studio.ca/en" hrefLang="en" />
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-3DEF40JVN1"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-3DEF40JVN1');
+          `}
+        </Script>
       </head>
       <body className={pretendard.className}>
         <NextIntlClientProvider locale={locale}>
