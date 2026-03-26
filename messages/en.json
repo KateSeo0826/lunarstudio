@@ -3,6 +3,12 @@
     "title": "Lunar Studio",
     "description": "Lunar Studio tells your brand story through web design. We handle strategy, design, and development together."
   },
+  "metadata": {
+    "title": "Lunar Studio | High-Performance Web Development",
+    "description": "Lunar Studio is a boutique studio specializing in custom web design, brand design, and emotive UI/UX. We create client-focused websites on platforms like Imweb, WordPress, Shopify, and Cafe24 to maximize brand value.",
+    "ogTitle": "Lunar Studio Official Website",
+    "ogDescription": "Experience high-speed and SEO optimization."
+  },
   "home": {
     "contactLink": "Contact Us for your business",
     "header": "Welcome Lunar Studio",

@@ -8,7 +8,44 @@ import Footer from "../../components/Footer";
 import { routing } from "../../i18n/routing";
 import Script from "next/script";
 import "./globals.css";
-import { GoogleAnalytics } from "@next/third-parties/google";
+import { getTranslations } from "next-intl/server";
+import type { Metadata } from "next";
+
+export async function generateMetadata({
+  params: { locale },
+}: {
+  params: { locale: string };
+}): Promise<Metadata> {
+  const t = await getTranslations({ locale, namespace: "metadata" });
+
+  return {
+    title: t("title"),
+    description: t("description"),
+    metadataBase: "https://lunar-studio.ca/",
+    openGraph: {
+      title: t("ogTitle"),
+      description: t("ogDescription"),
+      url: `https://lunar-studio.ca/${locale}`,
+      siteName: "Lunar Studio",
+      images: [
+        {
+          url: "images/og-image.png",
+          width: 1200,
+          height: 600,
+          alt: "Lunar Studio Official Website",
+        },
+      ],
+      locale: locale === "ko" ? "ko_KR" : "en_US",
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: t("title"),
+      description: t("description"),
+      images: ["images/og-image.png"],
+    },
+  };
+}
 
 const pretendard = localFont({
   src: "../../public/fonts/PretendardVariable.woff2",
