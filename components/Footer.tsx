@@ -69,6 +69,9 @@ export default function Footer() {
               >
                 studio.lunacode@gmail.com ↗
               </Link>
+              <p className={styles.businessNo}>
+                Business Registration No: 690-24-02068
+              </p>
             </div>
           </div>
 

@@ -94,6 +94,14 @@
   color: #000;
 }
 
+.businessNo {
+  font-size: 1rem;
+  line-height: 1.2;
+  font-weight: 600;
+  color: #000;
+  margin: 0;
+}
+
 .ctaColumn {
   display: flex;
   flex-direction: column;

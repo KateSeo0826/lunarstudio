@@ -86,6 +86,10 @@ export default async function RootLayout({
           name="google-site-verification"
           content="Yzr9M-zbO617FBym5Y-F0u8tm_X7BKs-YerMiIhzig0"
         />
+        <meta
+          name="naver-site-verification"
+          content="ad3ed6914ed37996162b48bc31cdbbb203aa4747"
+        />
         <link rel="alternate" href="https://lunar-studio.ca/ko" hrefLang="ko" />
         <link rel="alternate" href="https://lunar-studio.ca/en" hrefLang="en" />
         <Script
