@@ -148,6 +148,7 @@
   color: #444;
   margin-bottom: 1.25rem;
   flex-grow: 1;
+  word-break: keep-all;
 }
 
 .stars {

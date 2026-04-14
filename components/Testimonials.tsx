@@ -25,7 +25,6 @@ export default function Testimonials() {
   return (
     <section className={styles.section}>
       <div className={styles.container}>
-        {/* 상단 레이아웃 (기존 유지) */}
         <div className={styles.topGrid}>
           <div className={styles.titleArea}>
             <div className={styles.headingWrap}>
