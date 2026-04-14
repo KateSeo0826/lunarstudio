@@ -238,6 +238,7 @@
 .allProjectsBtn:hover {
   background-color: var(--black);
   color: var(--white);
+  border-color: var(--yellow);
   transform: translateY(-5px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
