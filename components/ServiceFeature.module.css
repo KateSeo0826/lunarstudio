@@ -1,0 +1,162 @@
+.container {
+  max-width: 1400px; /* 더 넓은 여백 */
+  margin: 0 auto;
+  padding: 120px 24px;
+  text-align: center;
+  /* 아주 은은한 그라디언트 배경 */
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgba(240, 249, 255, 0.5) 0%,
+    rgba(255, 255, 255, 0) 50%
+  );
+}
+
+.header {
+  margin-bottom: 90px;
+}
+
+.title {
+  font-size: 3.5rem; /* 더 대담한 크기 */
+  font-weight: 900;
+  line-height: 1.2;
+  margin-bottom: 28px;
+  letter-spacing: -0.04em; /* 타이포그래피 엣지 */
+  color: #111827; /* 더 진한 블랙 */
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2.5rem;
+  }
+}
+
+.highlight {
+  position: relative;
+  color: #0066ff; /* 더 깊고 고급스러운 블루 */
+  display: inline-block;
+}
+
+/* 밑줄 효과 */
+.highlight::after {
+  content: "";
+  position: absolute;
+  bottom: 8px;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  background-color: #a3e635; /* 포인트 네온 그린 */
+  opacity: 0.3;
+  z-index: -1;
+}
+
+.subtitle {
+  color: #6b7280; /* 더 슬림한 컬러 */
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.8;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 32px;
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.card {
+  /* 글래스모피즘 효과 */
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  /* 비대칭 둥글기 (엣지 디자인) */
+  border-radius: 40px 10px 40px 10px;
+  padding: 50px 40px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  min-height: 480px;
+  border: 1px solid rgba(229, 231, 235, 0.3);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+  transition: all 0.4s ease-out; /* 부드러운 호버 */
+}
+
+/* 호버 효과 */
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 102, 255, 0.08);
+  border-color: rgba(0, 102, 255, 0.1);
+}
+
+.iconWrapper {
+  background-color: #0066ff; /* 아이콘 배경을 블루로 */
+  width: 56px;
+  height: 56px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+  box-shadow: 0 10px 20px rgba(0, 102, 255, 0.2);
+}
+
+.iconWrapper svg {
+  color: white !important; /* 아이콘을 화이트로 */
+}
+
+.cardTitle {
+  font-size: 1.8rem;
+  font-weight: 800;
+  line-height: 1.35;
+  margin-bottom: 24px;
+  letter-spacing: -0.03em;
+  color: #1f2937;
+  white-space: pre-line;
+  word-break: keep-all;
+}
+
+.cardDesc {
+  color: #6b7280;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.8;
+  margin-bottom: 50px;
+  flex-grow: 1;
+  word-break: keep-all;
+}
+
+.tagWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  background-color: rgba(163, 230, 53, 0.1); /* 네온 그린 연한 배경 */
+  color: #65a30d; /* 네온 그린 진한 텍스트 */
+  font-size: 13px;
+  font-weight: 600;
+  padding: 8px 18px;
+  border-radius: 999px;
+  letter-spacing: -0.01em;
+}
+
+/* 화살표 버튼 (프리미엄 엣지) */
+.arrowButton {
+  color: #0066ff;
+  opacity: 0.5;
+  transition: opacity 0.3s;
+}
+
+.card:hover .arrowButton {
+  opacity: 1;
+}

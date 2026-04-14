@@ -4,7 +4,11 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
 import styles from "./service.module.css"; // 별도의 모듈 CSS 사용
-
+import ServiceCard from "@/components/ServiceHero";
+import ServiceWhy from "@/components/ServiceWhy";
+import ServiceFeature from "@/components/ServiceFeature";
+import ServiceFunction from "@/components/ServiceFunction";
+import ServiceProcess from "@/components/ServiceProcess";
 export default function ServicePage() {
   const t = useTranslations("service");
 
@@ -24,6 +28,10 @@ export default function ServicePage() {
 
   return (
     <section className={styles.section}>
+      {/* <ServiceCard />
+      <ServiceWhy />
+      <ServiceFunction />
+      <ServiceProcess /> */}
       <div className={styles.container}>
         <header className={styles.header}>
           <motion.div {...moveDown} className={styles.statusTag}>

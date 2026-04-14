@@ -1,0 +1,134 @@
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 100px 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 80px;
+  gap: 40px;
+}
+
+.title {
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: -0.03em;
+  margin: 0;
+}
+
+.titleHighlight {
+  color: var(--purple);
+}
+
+.subtitle {
+  color: #4b5563;
+  font-size: 1.125rem;
+  line-height: 1.7;
+  text-align: right;
+  max-width: 350px;
+  margin: 0;
+}
+
+.subtitle strong {
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.listItem {
+  display: grid;
+  grid-template-columns: 80px 1fr auto;
+  align-items: center;
+  padding: 40px;
+  border-left: 4px solid #e5e7eb;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.firstItem {
+  border-left-color: var(--purple);
+  color: #1f2937 !important;
+}
+
+.firstItem .itemNumber,
+.firstItem .itemTitle {
+  color: var(--purple);
+}
+
+.firstItem .itemTag {
+  border-color: var(--purple);
+  color: var(--purple);
+  background-color: rgba(37, 99, 235, 0.05);
+}
+
+/* Hover 시 스타일: 왼쪽 선이 찐해짐 */
+.listItem:hover {
+  border-left-color: var(--purple);
+  background-color: #f8fafc; /* 살짝 배경색을 주어 인지력 향상 */
+}
+
+.listItem:hover .itemNumber,
+.listItem:hover .itemTitle {
+  color: var(--purple);
+}
+
+.listItem:hover .itemTag {
+  border-color: var(--purple);
+  color: var(--purple);
+}
+
+/* [중요] 리스트 전체에 마우스가 올라갔을 때, 
+   첫 번째 아이템(firstItem)의 활성화 스타일을 해제 (호버 중인 아이템만 강조되게) */
+.list:hover .firstItem:not(:hover) {
+  border-left-color: #e5e7eb;
+  background-color: transparent;
+}
+
+.list:hover .firstItem:not(:hover) .itemNumber,
+.list:hover .firstItem:not(:hover) .itemTitle {
+  color: #9ca3af;
+}
+
+.list:hover .firstItem:not(:hover) .itemTag {
+  border-color: #e5e7eb;
+  color: #9ca3af;
+  background-color: transparent;
+}
+
+.itemNumber {
+  font-weight: 700;
+  color: #9ca3af;
+  transition: color 0.3s;
+}
+.itemTitle {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #9ca3af;
+  transition: color 0.3s;
+}
+.itemDesc {
+  color: #333;
+  line-height: 1.7;
+  word-break: keep-all;
+}
+.itemTag {
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 8px 16px;
+  border-radius: 999px;
+  border: 1px solid #e5e7eb;
+  color: #9ca3af;
+  transition: all 0.3s;
+}
