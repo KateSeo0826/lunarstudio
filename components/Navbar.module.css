@@ -188,7 +188,7 @@
     position: fixed;
     top: 0;
     right: 0;
-    width: 90%;
+
     height: 75dvh;
     background-color: var(--black);
     z-index: 1000;
