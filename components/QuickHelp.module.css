@@ -128,7 +128,6 @@
 }
 
 .qText {
-  text-align: left;
   font-size: 1.2rem;
   font-weight: 600;
   color: var(--black);
@@ -152,10 +151,12 @@
 }
 
 .answer {
-  padding-bottom: 30px;
+  padding-left: 2.25rem;
+  padding-bottom: 1.75rem;
   color: #666;
   line-height: 1.7;
   font-size: 1.05rem;
+  word-break: keep-all;
 }
 
 .footerCta {
@@ -211,6 +212,17 @@
     top: -10px;
   }
 
+  .answer {
+    padding-left: 0.5rem;
+    font-size: 0.8rem;
+    word-break: keep-all;
+    padding-bottom: 1rem;
+  }
+
+  .icon {
+    width: 30px;
+    height: 30px;
+  }
   .askBtn {
     padding: 0.85rem 1.25rem;
     font-size: 0.8rem;
