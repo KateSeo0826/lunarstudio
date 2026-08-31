@@ -93,7 +93,7 @@ export default async function RootLayout({
         />
         <meta
           name="impact-site-verification"
-          value="c5c4d892-a0a7-4df7-bbea-cb3a1cc912e5"
+          content="c5c4d892-a0a7-4df7-bbea-cb3a1cc912e5"
         />
         <link rel="alternate" href="https://lunar-studio.ca/ko" hrefLang="ko" />
         <link rel="alternate" href="https://lunar-studio.ca/en" hrefLang="en" />
