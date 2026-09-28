@@ -1,0 +1,12 @@
+.body { color: #252525; font-size: clamp(1.05rem, 1.5vw, 1.2rem); line-height: 1.85; }
+.body > *:first-child { margin-top: 0; }
+.body p { margin: 0 0 1.5rem; }
+.body h2 { font-size: clamp(1.8rem, 4vw, 3rem); margin: 4rem 0 1.25rem; line-height: 1.1; }
+.body h3 { font-size: clamp(1.35rem, 2.5vw, 2rem); margin: 3rem 0 1rem; }
+.body ul, .body ol { margin: 0 0 2rem; padding-left: 1.5rem; }
+.body li { margin-bottom: .65rem; }
+.body a { color: #4c5ef1; text-decoration: underline; text-underline-offset: 3px; }
+.body blockquote { border-left: 3px solid #4c5ef1; margin: 2.5rem 0; padding: .5rem 0 .5rem 1.5rem; font-size: 1.2em; }
+.figure { margin: 3rem 0; }
+.image { display: block; width: 100%; height: auto; border-radius: 1rem; }
+.figure figcaption { color: #696969; font-size: .875rem; margin-top: .75rem; text-align: center; }

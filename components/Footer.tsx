@@ -16,7 +16,7 @@ const navItems = [
   { name: "ABOUT", path: "/about" },
   { name: "PROJECTS", path: "/projects" },
   { name: "SERVICES", path: "/service" },
-  { name: "BLOG", path: "https://blog.naver.com/violetds03" },
+  { name: "BLOG", path: "/blog" },
   { name: "CONTACT", path: "/contact" },
 ];
 

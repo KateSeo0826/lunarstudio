@@ -1,0 +1,17 @@
+.page { min-height: 70vh; padding: clamp(9rem, 14vw, 13rem) clamp(1.25rem, 5vw, 5rem) 8rem; }
+.hero { max-width: 1120px; margin: 0 auto 5rem; }
+.eyebrow { color: var(--purple); font-size: .78rem; font-weight: 700; letter-spacing: .18em; margin: 0 0 1.5rem; }
+.hero h1 { font-size: clamp(3rem, 8vw, 7.5rem); letter-spacing: -.055em; line-height: .93; margin: 0; max-width: 1050px; }
+.intro { color: #555; font-size: clamp(1rem, 1.7vw, 1.25rem); line-height: 1.7; margin: 2rem 0 0; max-width: 680px; }
+.grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 5rem 2rem; margin: 0 auto; max-width: 1120px; }
+.card { min-width: 0; }
+.imageLink { background: #ececec; border-radius: 1rem; display: block; overflow: hidden; }
+.cardImage { aspect-ratio: 16 / 10; display: block; height: auto; object-fit: cover; transition: transform .5s ease; width: 100%; }
+.imageLink:hover .cardImage { transform: scale(1.025); }
+.meta { color: #686868; display: flex; font-size: .78rem; justify-content: space-between; letter-spacing: .04em; margin-top: 1.25rem; text-transform: uppercase; }
+.card h2 { font-size: clamp(1.8rem, 3vw, 2.8rem); letter-spacing: -.035em; line-height: 1.05; margin: 1rem 0; }
+.card h2 a { color: inherit; }
+.card > p { color: #555; line-height: 1.65; margin: 0 0 1.25rem; }
+.readLink { color: var(--foreground); font-size: .9rem; font-weight: 700; }
+.empty { border-top: 1px solid #d7d7d7; margin: 0 auto; max-width: 1120px; padding: 3rem 0; }
+@media (max-width: 760px) { .page { padding-bottom: 5rem; } .hero { margin-bottom: 3.5rem; } .grid { grid-template-columns: 1fr; gap: 4rem; } }
